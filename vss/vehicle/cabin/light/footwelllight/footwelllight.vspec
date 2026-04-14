@@ -1,0 +1,63 @@
+# SPDX-License-Identifier: Apache-2.0
+#
+# Copyright 2026 JASPAR
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+Vehicle.Cabin.Light.FootwellLight:
+  type: branch
+  instances:
+    - Row[1,4]
+    - ["DriverSide","PassengerSide"]
+  description: FootwellLight for a specific area in the vehicle
+Vehicle.Cabin.Light.FootwellLight.IsLightOn:
+  type: actuator
+  datatype: boolean
+  description: Indicates whether the light is turned on. True = On, False = Off.
+Vehicle.Cabin.Light.FootwellLight.Intensity:
+  type: actuator
+  datatype: uint8
+  unit: percent
+  min: 1
+  max: 100
+  description: How much of the maximum possible brightness of the light is used. 1 = Maximum attenuation, 100 = No attenuation (i.e. full brightness).
+  comment: Minimum value cannot be zero as on/off is controlled by the actuator IsLightOn. V4.0 moved from Cabin.Lights.AmbientLight.Intensity to enable individual control of lights via the SingleConfigurableLight.vspec.
+Vehicle.Cabin.Light.FootwellLight.Color:
+  type: actuator
+  datatype: string
+  description: Hexadecimal color code represented as a 3-byte RGB (i.e. Red, Green, and Blue) value preceded by a hash symbol "#". Allowed range "#000000" to "#FFFFFF".
+  comment: For example; "#C0C0C0" = Silver, "#FFD700" = Gold, "#000000" = Black, "#FFFFFF" = White, etc.
+Vehicle.Cabin.Light.FootwellLight.IsLightOn_Availability_Actuator:
+  datatype: boolean
+  type: sensor
+  description: Availability of actuating the signal. True = Available False = Unavailable.
+Vehicle.Cabin.Light.FootwellLight.IsLightOn_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Cabin.Light.FootwellLight.Intensity_Availability_Actuator:
+  datatype: boolean
+  type: sensor
+  description: Availability of actuating the signal. True = Available False = Unavailable.
+Vehicle.Cabin.Light.FootwellLight.Intensity_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Cabin.Light.FootwellLight.Color_Availability_Actuator:
+  datatype: boolean
+  type: sensor
+  description: Availability of actuating the signal. True = Available False = Unavailable.
+Vehicle.Cabin.Light.FootwellLight.Color_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
