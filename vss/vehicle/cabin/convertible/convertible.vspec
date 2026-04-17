@@ -1,0 +1,45 @@
+# SPDX-License-Identifier: Apache-2.0
+#
+# Copyright 2026 JASPAR
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+Vehicle.Cabin.Convertible.IsOpen:
+  datatype: boolean
+  type: actuator
+  description: Is item open or closed? True = Fully or partially open. False = Fully closed.
+Vehicle.Cabin.Convertible.Position:
+  datatype: uint8
+  type: actuator
+  min: 0
+  max: 100
+  unit: percent
+  description: Item position. 0 = Fully closed position 100 = Fully Opened position.
+Vehicle.Cabin.Convertible.IsOpen_Availability_Actuator:
+  datatype: boolean
+  type: sensor
+  description: Availability of actuating the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Convertible.IsOpen_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Convertible.Position_Availability_Actuator:
+  datatype: boolean
+  type: sensor
+  description: Availability of actuating the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Convertible.Position_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Convertible.Status:
+  delete: true

@@ -1,0 +1,99 @@
+# SPDX-License-Identifier: Apache-2.0
+#
+# Copyright 2026 JASPAR
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Seat movement control via the Yoriito Vehicle API is restricted to the safety-defined range specified by the vehicle,
+# and may not encompass the full extent of physically operable motion.
+# The actual behavior associated with each massage level is subject to the definitions provided by the vehicle system.
+Vehicle.Cabin.Seat.IsOccupied_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Seat.IsBelted_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Seat.SeatBeltHeight_Availability_Actuator:
+  datatype: boolean
+  type: sensor
+  description: Availability of actuating the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Seat.SeatBeltHeight_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Seat.Massage_Availability_Actuator:
+  datatype: boolean
+  type: sensor
+  description: Availability of actuating the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Seat.Massage_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Seat.Position_Availability_Actuator:
+  datatype: boolean
+  type: sensor
+  description: Availability of actuating the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Seat.Position_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Seat.Height_Availability_Actuator:
+  datatype: boolean
+  type: sensor
+  description: Availability of actuating the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Seat.Height_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Seat.Tilt_Availability_Actuator:
+  datatype: boolean
+  type: sensor
+  description: Availability of actuating the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Seat.Tilt_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Seat.Heater:
+  datatype: uint8
+  type: actuator
+  min: 0
+  max: 100
+  unit: percent
+  description: Seat heating level. 0 = Heating deactivated, 100 = Maximum heating.
+Vehicle.Cabin.Seat.Ventilator:
+  datatype: uint8
+  type: actuator
+  min: 0
+  max: 100
+  unit: percent
+  description: Seat ventilation level. 0 = Ventilation deactivated, 100 = Maximum ventilation.
+Vehicle.Cabin.Seat.Heater_Availability_Actuator:
+  datatype: boolean
+  type: sensor
+  description: Availability of actuating the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Seat.Heater_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Seat.Ventilator_Availability_Actuator:
+  datatype: boolean
+  type: sensor
+  description: Availability of actuating the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Seat.Ventilator_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Seat.HeatingCooling:
+  delete: true

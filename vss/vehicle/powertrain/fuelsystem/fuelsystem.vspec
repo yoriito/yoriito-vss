@@ -1,0 +1,97 @@
+# SPDX-License-Identifier: Apache-2.0
+#
+# Copyright 2026 JASPAR
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+Vehicle.Powertrain.FuelSystem.AbsoluteLevel_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.FuelSystem.RelativeLevel_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.FuelSystem.Range_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.FuelSystem.TimeRemaining_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.FuelSystem.InstantConsumption_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.FuelSystem.AverageConsumption_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.FuelSystem.ConsumptionSinceStart_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.FuelSystem.IsEngineStopStartEnabled_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.FuelSystem.IsFuelLevelLow_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.FuelSystem.IsFuelPortFlapOpen_Availability_Actuator:
+  datatype: boolean
+  type: sensor
+  description: Availability of actuating the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.FuelSystem.IsFuelPortFlapOpen_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.FuelSystem.HybridType:
+  delete: true
+Vehicle.Powertrain.FuelSystem.SupportedFuel:
+  allowed: ['JIS_K_2202_E3_96', 'JIS_K_2202_E10_96', 'JIS_K_2202_E3_89', 'JIS_K_2202_E10_96', 'JIS_K_2390_B0', 'JIS_K_2390_B5',
+            'JIS_K_2240_LPG', 'JIS_K_0512_H2', 'JIS_OTHER', 'DIN_EN_16942_E5_95', 'DIN_EN_16942_E5_98', 'DIN_EN_16942_E10_95', 
+            'DIN_EN_16942_E10_98', 'DIN_EN_16942_E85', 'DIN_EN_16942_B7', 'DIN_EN_16942_B10', 'DIN_EN_16942_B20', 'DIN_EN_16942_B30', 
+            'DIN_EN_16942_B100', 'DIN_EN_16942_XTL', 'DIN_EN_16942_LPG', 'DIN_EN_16942_CNG', 'DIN_EN_16942_LNG', 'DIN_EN_16942_H2', 
+            'DIN_OTHER']
+  description: The signal is information on fuels supported by the vehicle.
+               The allowed elements of the signal are currently defined only for the EU and JP.
+               The fuel definition for the EU is in DIN EU, and that for JP is in JIS.
+               The elements start with DIN_EU_ for the EU and with JIS for JP.
+               Identifiers are based on DIN EN 16942:2021-08, appendix B.
+               When the signal is used in another area, add new allowed elements.
+               Example 1 is JIS_K_2202_E3_96.
+               *JIS stands for Japan Industrial Standards.
+               *K stands for kagaku(chemistry).
+               *JIS K 2202 is the JIS standard number K 2202.
+               *E3 means ethanol 3%.
+               *96 means RON 96%.
+               Example 2 is DIN_EN_16942_B7.
+               *DIN stands for Deutsches Institut fur Normung (German Institute for Standardization).
+               *EN stands for European standard.
+               *EN 16942 is the EN standard number 16942.
+               *B7 means Biodiesel 7%.
+               The following is an explanation of other abbreviations.
+               *LPG stands for Liquefied Petroleum Gas.
+               *H2 means Hydrogen.
+               *CNG stands for Compressed Natural Gas.
+               *LNG stands for Liquefied Natural Gas.
+               *XTL stands for X-to-Liquid.
+               The following is an explanation of JIS_other and DIN_other.
+               *JIS_other means the car can use other fuels in Japan.
+               *DIN_other means the car can use other fuels in EU.
+  comment: If you want to get fuel information about the car from the signal when in Japan, filter it using the keyword "JIS".
+Vehicle.Powertrain.FuelSystem.SupportedFuelTypes:
+  delete: true

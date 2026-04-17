@@ -1,0 +1,173 @@
+# SPDX-License-Identifier: Apache-2.0
+#
+# Copyright 2026 JASPAR
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+Vehicle.Powertrain.TractionBattery.ErrorCodes_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.TractionBattery.IsPowerConnected_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.TractionBattery.IsGroundConnected_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.TractionBattery.NetCapacity_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.TractionBattery.StateOfHealth_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.TractionBattery.NominalVoltage:
+  instantiate: false
+Vehicle.Powertrain.TractionBattery.MaxVoltage:
+  instantiate: false
+Vehicle.Powertrain.TractionBattery.CurrentVoltage_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.TractionBattery.CurrentCurrent_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.TractionBattery.CurrentPower_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.TractionBattery.AccumulatedChargedEnergy_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.TractionBattery.AccumulatedConsumedEnergy_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.TractionBattery.AccumulatedChargedThroughput_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.TractionBattery.AccumulatedConsumedThroughput_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.TractionBattery.PowerLoss_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.TractionBattery.Range:
+  instantiate: false
+Vehicle.Powertrain.TractionBattery.Range_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  instantiate: false
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.TractionBattery.TimeRemaining:
+  instantiate: false
+Vehicle.Powertrain.TractionBattery.TimeRemaining_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  instantiate: false
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.TractionBattery.Charging:
+  instantiate: false
+Vehicle.Powertrain.TractionBattery.DCDC:
+  instantiate: false
+Vehicle.Powertrain.TractionBattery.TotalGrossCapacity:
+  datatype: uint16
+  type: attribute
+  unit: kWh
+  instantiate: false
+  description: Total Gross capacity of the battery.
+Vehicle.Powertrain.TractionBattery.TotalNetCapacity:
+  datatype: uint16
+  type: sensor
+  unit: kWh
+  instantiate: false
+  description: Total net capacity of the battery considering aging.
+Vehicle.Powertrain.TractionBattery.TotalStateOfCharge:
+  type: branch
+  instantiate: false
+  description: Information on the state of charge of the vehicle's total high voltage battery.
+Vehicle.Powertrain.TractionBattery.TotalStateOfCharge.Current:
+  type: sensor
+  unit: percent
+  datatype: float
+  min: 0
+  max: 100.00
+  instantiate: false
+  description: Physical state of charge of the high voltage battery, relative to net capacity.
+               This is not necessarily the state of charge being displayed to the customer.
+Vehicle.Powertrain.TractionBattery.TotalStateOfCharge.Displayed:
+  type: sensor
+  datatype: float
+  unit: percent
+  min: 0
+  max: 100.00
+  instantiate: false
+  description: State of charge displayed to the customer.
+Vehicle.Powertrain.TractionBattery.TotalCurrentVoltage:
+  datatype: float
+  type: sensor
+  unit: V
+  instantiate: false
+  description: Total Current Voltage of the battery.
+Vehicle.Powertrain.TractionBattery.TotalCurrentCurrent:
+  datatype: float
+  type: sensor
+  unit: A
+  instantiate: false
+  description: Total current current flowing in/out of battery. Positive = Current flowing in to battery, e.g. during charging.
+               Negative = Current flowing out of battery, e.g. during driving.
+Vehicle.Powertrain.TractionBattery.TotalCurrentPower:
+  datatype: float
+  type: sensor
+  unit: W
+  instantiate: false
+  description: Total current electrical energy flowing in/out of battery. Positive = Energy flowing in to battery, e.g. during charging.
+               Negative = Energy flowing out of battery, e.g. during driving.
+Vehicle.Powertrain.TractionBattery.TotalNetCapacity_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  instantiate: false
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.TractionBattery.TotalStateOfCharge.Current_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  instantiate: false
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.TractionBattery.TotalStateOfCharge.Displayed_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  instantiate: false
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.TractionBattery.TotalCurrentVoltage_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  instantiate: false
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.TractionBattery.TotalCurrentCurrent_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  instantiate: false
+  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Powertrain.TractionBattery.TotalCurrentPower_Availability_Sensor:
+  datatype: boolean
+  type: sensor
+  instantiate: false
+  description: Availability of sensing the signal. True = Available False = Unavailable.
