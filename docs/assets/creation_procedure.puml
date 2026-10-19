@@ -1,0 +1,10 @@
+@startuml
+title VSS Generation Sequence
+
+start
+: Install vss-tool;
+: Clone COVESA vehicle_signal_specification repository(v5.0);
+: Overlay COVESA vspec files with Yoriito vspec files and generate the resulting yoriito vspec output;
+stop
+
+@enduml

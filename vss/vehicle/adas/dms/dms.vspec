@@ -14,27 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.ADAS.DMS.IsEnabled_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.ADAS.DMS.IsEnabled_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available False = Unavailable.
-Vehicle.ADAS.DMS.IsWarning_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
 Vehicle.ADAS.DMS.DegradationStatus:
   datatype: string
   type: sensor
   allowed: ["NO_DEGRADATION","CAMERA_LENS_CONTAMINATION","OTHER"]
   description: Indicates the current functional limitation or performance degradation status of DMS.
                This status may include non-fault conditions such as temporary limitations, reduced performance, or fallback modes.
-Vehicle.ADAS.DMS.DegradationStatus_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
 Vehicle.ADAS.DMS.IsError:
   delete: true

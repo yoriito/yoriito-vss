@@ -14,33 +14,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.ADAS.ESC.IsEnabled_Availability_Actuator:
-  datatype: boolean
+Vehicle.ADAS.ESC.RoadFriction:
+  datatype: Types.RoadFrictionRange
   type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.ADAS.ESC.IsEnabled_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.ADAS.ESC.IsEngaged_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.ADAS.ESC.IsStrongCrossWindDetected_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.ADAS.ESC.RoadFriction.MostProbable_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.ADAS.ESC.RoadFriction.LowerBound_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.ADAS.ESC.RoadFriction.UpperBound_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
+  description: Road friction values reported by the ESC system.
 Vehicle.ADAS.ESC.IsError:
+  delete: true
+Vehicle.ADAS.ESC.RoadFriction.MostProbable:
+  delete: true
+Vehicle.ADAS.ESC.RoadFriction.LowerBound:
+  delete: true
+Vehicle.ADAS.ESC.RoadFriction.UpperBound:
   delete: true

@@ -14,19 +14,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.Powertrain.TractionBattery.Charging.MaximumChargingCurrent.DC_Availability_Sensor:
-  datatype: boolean
+Vehicle.Powertrain.TractionBattery.Charging.MaximumChargingCurrent.ThreePhaseCurrentMeasurements:
+  datatype: Types.ThreePhaseCurrentMeasurements
   type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Powertrain.TractionBattery.Charging.MaximumChargingCurrent.Phase1_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Powertrain.TractionBattery.Charging.MaximumChargingCurrent.Phase2_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Powertrain.TractionBattery.Charging.MaximumChargingCurrent.Phase3_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
+  description: Maximum AC charging current (rms) at inlet that can be accepted by the system.
+Vehicle.Powertrain.TractionBattery.Charging.MaximumChargingCurrent.Phase1:
+  delete: true
+Vehicle.Powertrain.TractionBattery.Charging.MaximumChargingCurrent.Phase2:
+  delete: true
+Vehicle.Powertrain.TractionBattery.Charging.MaximumChargingCurrent.Phase3:
+  delete: true

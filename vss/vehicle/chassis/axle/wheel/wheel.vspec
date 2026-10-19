@@ -17,11 +17,3 @@
 Vehicle.Chassis.Axle.Wheel.Speed:
   comment: Positive if wheel is trying to drive vehicle forward.
            Negative if wheel is trying to drive vehicle backward.
-Vehicle.Chassis.Axle.Wheel.Speed_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Chassis.Axle.Wheel.AngularSpeed_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.

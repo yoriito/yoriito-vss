@@ -14,15 +14,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.Acceleration.Longitudinal_Availability_Sensor:
-  datatype: boolean
+Vehicle.Acceleration:
+  datatype: Types.Acceleration
   type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Acceleration.Lateral_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Acceleration.Vertical_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
+  description: Spatial acceleration.
+Vehicle.Acceleration.Longitudinal:
+  delete: true
+Vehicle.Acceleration.Lateral:
+  delete: true
+Vehicle.Acceleration.Vertical:
+  delete: true

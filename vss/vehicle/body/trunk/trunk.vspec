@@ -19,37 +19,5 @@ Vehicle.Body.Trunk:
   instances:
     - ["Front", "Rear"]
   description: Front and rear trunk compartments.
-Vehicle.Body.Trunk.Position_Availability_Actuator:
-  type: sensor
-  datatype: boolean
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Body.Trunk.Position_Availability_Sensor:
-  type: sensor
-  datatype: boolean
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Body.Trunk.IsLocked_Availability_Actuator:
-  type: sensor
-  datatype: boolean
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Body.Trunk.IsLocked_Availability_Sensor:
-  type: sensor
-  datatype: boolean
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Body.Trunk.IsLightOn_Availability_Actuator:
-  type: sensor
-  datatype: boolean
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Body.Trunk.IsLightOn_Availability_Sensor:
-  type: sensor
-  datatype: boolean
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Body.Trunk.IsOpen_Availability_Actuator:
-  type: sensor
-  datatype: boolean
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Body.Trunk.IsOpen_Availability_Sensor:
-  type: sensor
-  datatype: boolean
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
 Vehicle.Body.Trunk.Switch:
   delete: true

@@ -17,61 +17,7 @@
 # Seat movement control via the Yoriito Vehicle API is restricted to the safety-defined range specified by the vehicle,
 # and may not encompass the full extent of physically operable motion.
 # The actual behavior associated with each massage level is subject to the definitions provided by the vehicle system.
-Vehicle.Cabin.Seat.IsOccupied_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Seat.IsBelted_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Seat.SeatBeltHeight_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Seat.SeatBeltHeight_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Seat.Massage_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Seat.Massage_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Seat.Position_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Seat.Position_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Seat.Height_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Seat.Height_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Seat.Tilt_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Seat.Tilt_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Seat.Heater:
-  datatype: uint8
-  type: actuator
-  min: 0
-  max: 100
-  unit: percent
-  description: Seat heating level. 0 = Heating deactivated, 100 = Maximum heating.
+
 Vehicle.Cabin.Seat.Ventilator:
   datatype: uint8
   type: actuator
@@ -79,21 +25,33 @@ Vehicle.Cabin.Seat.Ventilator:
   max: 100
   unit: percent
   description: Seat ventilation level. 0 = Ventilation deactivated, 100 = Maximum ventilation.
-Vehicle.Cabin.Seat.Heater_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Seat.Heater_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Seat.Ventilator_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Seat.Ventilator_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Seat.HeatingCooling:
+Vehicle.Cabin.Seat.NeckScarf.HeatingCooling:
+  datatype: int8
+  type: actuator
+  min: 0
+  max: 100
+  unit: percent
+  description: Heating or Cooling requsted for the Item.
+               -100 = Maximum cooling, 0 = Heating/cooling deactivated, 100 = Maximum heating.
+  comment: Since no vehicles equipped with cooling are available,
+           the effective implemented range is 0 to 100.
+Vehicle.Cabin.Seat.IsWarmerSwitchEngaged:
+  delete: true
+Vehicle.Cabin.Seat.IsCoolerSwitchEngaged:
+  delete: true
+Vehicle.Cabin.Seat.IsForwardSwitchEngaged:
+  delete: true
+Vehicle.Cabin.Seat.IsBackwardSwitchEngaged:
+  delete: true
+Vehicle.Cabin.Seat.IsUpSwitchEngaged:
+  delete: true
+Vehicle.Cabin.Seat.IsDownSwitchEngaged:
+  delete: true
+Vehicle.Cabin.Seat.IsTiltForwardSwitchEngaged:
+  delete: true
+Vehicle.Cabin.Seat.IsTiltBackwardSwitchEngaged:
+  delete: true
+Vehicle.Cabin.Seat.IsIncreaseMassageLevelSwitchEngaged:
+  delete: true
+Vehicle.Cabin.Seat.IsDecreaseMassageLevelSwitchEngaged:
   delete: true

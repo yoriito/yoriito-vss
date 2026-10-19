@@ -14,15 +14,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.Powertrain.TractionBattery.Charging.Location.Latitude_Availability_Sensor:
-  datatype: boolean
+Vehicle.Powertrain.TractionBattery.Charging.Location:
+  datatype: Types.Location
   type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Powertrain.TractionBattery.Charging.Location.Longitude_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Powertrain.TractionBattery.Charging.Location.Altitude_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
+  description: Location of last or current charging event.
+  comment: This may depending on implementation represent the location of (the charge port of) the vehicle during charging,
+           or the actual location of the charger/load connected to the vehicle.
+Vehicle.Powertrain.TractionBattery.Charging.Location.Latitude:
+  delete: true
+Vehicle.Powertrain.TractionBattery.Charging.Location.Longitude:
+  delete: true
+Vehicle.Powertrain.TractionBattery.Charging.Location.Altitude:
+  delete: true

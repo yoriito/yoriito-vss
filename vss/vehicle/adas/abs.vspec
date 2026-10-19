@@ -14,17 +14,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.ADAS.ABS.IsEnabled_Availability_Actuator:
-  type: sensor
-  datatype: boolean
-  description: Availability of controlling whether the Antilock Braking System (ABS) is enabled. True = Available. False = Unavailable.
-Vehicle.ADAS.ABS.IsEnabled_Availability_Sensor:
-  type: sensor
-  datatype: boolean
-  description: Availability of controlling whether the Antilock Braking System (ABS) is enabled. True = Available. False = Unavailable.
-Vehicle.ADAS.ABS.IsEngaged_Availability_Sensor:
-  type: sensor
-  datatype: boolean
-  description: Availability of sensing whether the Antilock Braking System (ABS) is currently regulating brake pressure. True = Available. False = Unavailable.
 Vehicle.ADAS.ABS.IsError:
-  delete: true 
+  delete: true

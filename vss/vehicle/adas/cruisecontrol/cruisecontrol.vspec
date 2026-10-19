@@ -14,5 +14,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.ADAS.CruiseControl:
+Vehicle.ADAS.CruiseControl.DegradationStatus:
+  datatype: string
+  type: sensor
+  allowed: ["NO_DEGRADATION","CONTAMINATION","OTHER"]
+  description: Indicates the current functional limitation or performance degradation status of Cruise Control.
+               This status may include non-fault conditions such as temporary limitations, reduced performance, or fallback modes.
+Vehicle.ADAS.CruiseControl.AdaptiveIntervalSet:
+  datatype: string
+  type: actuator
+  allowed: ["INTVL_1","INTVL_2","INTVL_3","INTVL_4","INTVL_5"]
+  description: Set the following distance for adaptive cruise control.
+               INTVL_1 indicates the shortest following distance.
+Vehicle.ADAS.CruiseControl.IsError:
   delete: true

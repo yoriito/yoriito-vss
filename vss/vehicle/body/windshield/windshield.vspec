@@ -40,79 +40,14 @@ Vehicle.Body.Windshield.Wiping.System.Position:
                0 = Start position, 100 = end position.
                The next RequestedPosition will be executed only after the wiper arm has reached
                the previous RequestedPosition, provided the next position has already been received.
-Vehicle.Body.Windshield.Wiping.Mode_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available False = Unavailable.
-Vehicle.Body.Windshield.Wiping.Mode_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Body.Windshield.Wiping.Intensity_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available False = Unavailable.
-Vehicle.Body.Windshield.Wiping.Intensity_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Body.Windshield.Wiping.System.Mode_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available False = Unavailable.
-Vehicle.Body.Windshield.Wiping.System.Mode_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Body.Windshield.Wiping.System.Frequency_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available False = Unavailable.
-Vehicle.Body.Windshield.Wiping.System.Frequency_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Body.Windshield.Wiping.System.Position_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available False = Unavailable.
-Vehicle.Body.Windshield.Wiping.System.Position_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Body.Windshield.Wiping.System.DriveCurrent_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Body.Windshield.Wiping.System.IsWiping_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Body.Windshield.Wiping.System.IsEndingWipeCycle_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Body.Windshield.Wiping.System.IsOverheated_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Body.Windshield.Wiping.System.IsWiperError_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Body.Windshield.Wiping.System.IsPositionReached_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Body.Windshield.Wiping.System.IsBlocked_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Body.Windshield.Wiping.WiperWear_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Body.Windshield.Wiping.IsWiperWorn_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
+Vehicle.Body.Windshield.Wiping.System.Mode:
+  datatype: string
+  type: actuator
+  allowed: ['STOP_HOLD', 'WIPE', 'PLANT_MODE', 'EMERGENCY_STOP', 'MAINTENANCE_MODE']
+  description: Requested mode of wiper system.
+               STOP_HOLD means that the wipers shall move to position given by TargetPosition and then hold the position.
+               WIPE means that wipers shall move to the position given by TargetPosition and then hold the position
+               if no new TargetPosition is requested.
+               PLANT_MODE means that wiping is disabled. Exact behavior is vehicle specific.
+               EMERGENCY_STOP means that wiping shall be immediately stopped without holding the position.
+               MAINTENANCE_MODE means that the wipers shall move to maintenance position. Location of maintenance position is vehicle specific.

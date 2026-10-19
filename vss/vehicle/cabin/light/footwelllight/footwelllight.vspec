@@ -37,27 +37,3 @@ Vehicle.Cabin.Light.FootwellLight.Color:
   datatype: string
   description: Hexadecimal color code represented as a 3-byte RGB (i.e. Red, Green, and Blue) value preceded by a hash symbol "#". Allowed range "#000000" to "#FFFFFF".
   comment: For example; "#C0C0C0" = Silver, "#FFD700" = Gold, "#000000" = Black, "#FFFFFF" = White, etc.
-Vehicle.Cabin.Light.FootwellLight.IsLightOn_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available False = Unavailable.
-Vehicle.Cabin.Light.FootwellLight.IsLightOn_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Cabin.Light.FootwellLight.Intensity_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available False = Unavailable.
-Vehicle.Cabin.Light.FootwellLight.Intensity_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Cabin.Light.FootwellLight.Color_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available False = Unavailable.
-Vehicle.Cabin.Light.FootwellLight.Color_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.

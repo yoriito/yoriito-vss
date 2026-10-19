@@ -14,43 +14,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.Powertrain.TractionBattery.BatteryConditioning.IsActive_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Powertrain.TractionBattery.BatteryConditioning.IsOngoing_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Powertrain.TractionBattery.BatteryConditioning.RequestedMode_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available False = Unavailable.
-Vehicle.Powertrain.TractionBattery.BatteryConditioning.RequestedMode_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Powertrain.TractionBattery.BatteryConditioning.StartTime_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available False = Unavailable.
-Vehicle.Powertrain.TractionBattery.BatteryConditioning.StartTime_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Powertrain.TractionBattery.BatteryConditioning.TargetTime_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available False = Unavailable.
-Vehicle.Powertrain.TractionBattery.BatteryConditioning.TargetTime_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Powertrain.TractionBattery.BatteryConditioning.TargetTemperature_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available False = Unavailable.
-Vehicle.Powertrain.TractionBattery.BatteryConditioning.TargetTemperature_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
+# This file is intentionally left empty. Please refer to the commit history to see previously existing signals.

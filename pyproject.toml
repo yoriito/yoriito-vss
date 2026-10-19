@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yoriito-vss"
+version = "0.2.0"
+description = "yoriito vss converter"
+requires-python = ">=3.8"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+dependencies = [
+  "vss-tools==6.0"
+]
+
+[tool.setuptools]
+packages = { find = {} }
+

@@ -13,7 +13,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
 Vehicle.Cabin.Sunroof.Slide:
   datatype: uint8
   type: actuator
@@ -21,29 +20,23 @@ Vehicle.Cabin.Sunroof.Slide:
   min: 0
   max: 100
   description: Sunroof slide position as a percent. 0 = Fully closed, 100 = Fully opened.
-Vehicle.Cabin.Sunroof.Slide_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Sunroof.Slide_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
+               In implementations where the tilt position is located beyond the fully closed position,
+               the slide value remains 0 while moving between the fully closed and tilt positions.
+               See Vehicle.Cabin.Sunroof.Tilt for details.
 Vehicle.Cabin.Sunroof.Tilt:
   datatype: uint8
   type: actuator
   unit: percent
   min: 0
   max: 100
-  description: Sunroof tilt position as a percent. 0 = Fully closed. 100 = Fully tilted. 
-Vehicle.Cabin.Sunroof.Tilt_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Sunroof.Tilt_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
+  description: Sunroof tilt position as a percent. 0 = Fully closed, 100 = Fully tilted.
+               The relationship between tilt and slide positions is vehicle dependent.
+               If the tilt position is located between the fully closed and fully opened positions,
+               the tilt value changes from 0 to 100 as the slide position changes and remains at 100
+               after the tilt position is reached.
+               If the tilt position is located beyond the fully closed position,
+               negative tilt positions are not represented and the tilt value remains 0 during slide movement
+               between the fully opened and fully closed positions.
 Vehicle.Cabin.Sunroof.Position:
   delete: true
 Vehicle.Cabin.Sunroof.Switch:

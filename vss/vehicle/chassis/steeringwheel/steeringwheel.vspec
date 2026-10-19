@@ -14,26 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.Chassis.SteeringWheel.Angle_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Chassis.SteeringWheel.Tilt_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available False = Unavailable.
-Vehicle.Chassis.SteeringWheel.Tilt_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Chassis.SteeringWheel.Extension_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available False = Unavailable.
-Vehicle.Chassis.SteeringWheel.Extension_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
 Vehicle.Chassis.SteeringWheel.Heating:
   datatype: uint8
   type: actuator
@@ -42,13 +22,5 @@ Vehicle.Chassis.SteeringWheel.Heating:
   unit: percent
   description: Heating requested for the SteeringWheel.
                0 = Heating deactivated, 100 = Maximum heating.
-Vehicle.Chassis.SteeringWheel.Heating_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available False = Unavailable.
-Vehicle.Chassis.SteeringWheel.Heating_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
 Vehicle.Chassis.SteeringWheel.HeatingCooling:
   delete: true

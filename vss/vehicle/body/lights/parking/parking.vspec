@@ -14,15 +14,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.Body.Lights.Parking.IsOn_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the light to turn it on and off. True = Availabile. False = Unavailabile.
-Vehicle.Body.Lights.Parking.IsOn_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing if the light is on or off. True = Availabile. False = Unavailabile.
-Vehicle.Body.Lights.Parking.IsDefect_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing if the light is defect. True = Availabile. False = Unavailabile.
+# This file is intentionally left empty. Please refer to the commit history to see previously existing signals.

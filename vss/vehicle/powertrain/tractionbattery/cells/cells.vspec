@@ -22,18 +22,10 @@ Vehicle.Powertrain.TractionBattery.Cells:
 Vehicle.Powertrain.TractionBattery.Cells.Temperature:
   datatype: float
   type: sensor
-  unit: celsius
+  unit: Celsius
   description: Current cell temperature.
 Vehicle.Powertrain.TractionBattery.Cells.Voltage:
   datatype: float
   type: sensor
   unit: V
   description: Current cell voltage.
-Vehicle.Powertrain.TractionBattery.Cells.Temperature_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Powertrain.TractionBattery.Cells.Voltage_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.

@@ -35,19 +35,7 @@ VSS Json/CSV files are generated automatically via a **GitHub Actions commit tri
 
 Refer to `scripts/create_vspec.sh` for details.
 
-![Script Sequence Diagram](imgs/script_seqence.png)
-```plantuml
-@startuml
-title VSS Generation Sequence
-
-start
-: Install vss-tool;
-: Clone COVESA vehicle_signal_specification repository(v5.0);
-: Overlay COVESA vspec files with Yoriito vspec files and generate the resulting yoriito vspec output;
-stop
-
-@enduml
-```
+![Script Sequence Diagram](assets/creation_procedure.svg)
 
 
 ## Additional Notes

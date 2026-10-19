@@ -14,30 +14,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.Cabin.HVAC.Station.FanSpeed_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.HVAC.Station.FanSpeed_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.HVAC.Station.Temperature_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.HVAC.Station.Temperature_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.HVAC.Station:
+ type: branch
+ instances:
+ - Row[1,4]
+ - ["DriverSide","PassengerSide"]
+ description: HVAC for single station in the vehicle
 Vehicle.Cabin.HVAC.Station.AirDistribution:
   allowed: ['UP', 'MIDDLE', 'DOWN', 'MIDDLE_AND_DOWN', 'UP_AND_MIDDLE', 'UP_AND_DOWN', 'UP_MIDDLE_AND_DOWN']
   description: Direction of airstream. UP = windshield, MIDDLE = upper body, DOWN = footwell.
-Vehicle.Cabin.HVAC.Station.AirDistribution_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.HVAC.Station.AirDistribution_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.

@@ -14,11 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.Occupant.MidEyeGaze.Azimuth_Availability_Sensor:
-  datatype: boolean
-  type: sensor 
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Occupant.MidEyeGaze.Elevation_Availability_Sensor:
-  datatype: boolean
+Vehicle.Occupant.MidEyeGaze:
+  datatype: Types.PointingDirection
   type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
+  description: Direction from mid eye position to object driver is looking at. The object reference point is driver mid eye position. The target point is the point of gaze.
+Vehicle.Occupant.MidEyeGaze.Azimuth:
+  delete: true
+Vehicle.Occupant.MidEyeGaze.Elevation:
+  delete: true
