@@ -14,25 +14,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.Driver.DistractionLevel_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Driver.IsEyesOnRoad_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Driver.IsHandsOnWheel_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Driver.FatigueLevel_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Driver.HeartRate_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
 Vehicle.Driver.AttentiveProbability:
   delete: true

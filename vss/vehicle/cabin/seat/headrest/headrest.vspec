@@ -14,19 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.Cabin.Seat.Headrest.Height_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Seat.Headrest.Height_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Seat.Headrest.Angle_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Seat.Headrest.Angle_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Seat.Headrest.IsUpSwitchEngaged:
+  delete: true
+Vehicle.Cabin.Seat.Headrest.IsDownSwitchEngaged:
+  delete: true
+Vehicle.Cabin.Seat.Headrest.IsForwardSwitchEngaged:
+  delete: true
+Vehicle.Cabin.Seat.Headrest.IsBackwardSwitchEngaged:
+  delete: true

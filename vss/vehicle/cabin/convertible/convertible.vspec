@@ -25,21 +25,5 @@ Vehicle.Cabin.Convertible.Position:
   max: 100
   unit: percent
   description: Item position. 0 = Fully closed position 100 = Fully Opened position.
-Vehicle.Cabin.Convertible.IsOpen_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Convertible.IsOpen_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Convertible.Position_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Convertible.Position_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
 Vehicle.Cabin.Convertible.Status:
   delete: true

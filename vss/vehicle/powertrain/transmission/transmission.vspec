@@ -16,104 +16,8 @@
 
 Vehicle.Powertrain.Transmission.Type:
   allowed: ['UNKNOWN', 'AT', 'MT', 'CVT', 'NONE']
-Vehicle.Powertrain.Transmission.TravelledDistance_Availability_Sensor:
-  type: sensor
-  datatype: boolean
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.CurrentGear_Availability_Sensor:
-  type: sensor
-  datatype: boolean
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.SelectedGear_Availability_Actuator:
-  type: sensor
-  datatype: boolean
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.SelectedGear_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.IsParkLockEngaged_Availability_Actuator:
-  type: sensor
-  datatype: boolean
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.IsParkLockEngaged_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.IsLowRangeEngaged_Availability_Actuator:
-  type: sensor
-  datatype: boolean
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.IsLowRangeEngaged_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.IsElectricalPowertrainEngaged_Availability_Actuator:
-  type: sensor
-  datatype: boolean
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.IsElectricalPowertrainEngaged_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.PerformanceMode_Availability_Actuator:
-  type: sensor
-  datatype: boolean
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.PerformanceMode_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
 Vehicle.Powertrain.Transmission.GearChangeMode:
   allowed: ['MANUAL', 'AUTOMATIC', 'RANGELIMIT']
-Vehicle.Powertrain.Transmission.GearChangeMode_Availability_Actuator:
-  type: sensor
-  datatype: boolean
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.GearChangeMode_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.Temperature_Availability_Sensor:
-  type: sensor
-  datatype: boolean
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.ClutchEngagement_Availability_Actuator:
-  type: sensor
-  datatype: boolean
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.ClutchEngagement_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.ClutchWear_Availability_Sensor:
-  type: sensor
-  datatype: boolean
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.DiffLockFrontEngagement_Availability_Actuator:
-  type: sensor
-  datatype: boolean
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.DiffLockFrontEngagement_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.DiffLockRearEngagement_Availability_Actuator:
-  type: sensor
-  datatype: boolean
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.DiffLockRearEngagement_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.TorqueDistribution_Availability_Actuator:
-  type: sensor
-  datatype: boolean
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.TorqueDistribution_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
 Vehicle.Powertrain.Transmission.DiffLockCenterEngagement:
   datatype: float
   type: actuator
@@ -121,19 +25,7 @@ Vehicle.Powertrain.Transmission.DiffLockCenterEngagement:
   min: 0
   max: 100
   description: Center Diff Lock engagement. 0% = Diff lock fully disengaged. 100% = Diff lock fully engaged.
-Vehicle.Powertrain.Transmission.DiffLockCenterEngagement_Availability_Actuator:
-  type: sensor
-  datatype: boolean
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.Transmission.DiffLockCenterEngagement_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
 Vehicle.Powertrain.Transmission.CurrentPhysicalGear:
   datatype: int8
   type: sensor
   description: The current gear physically engaged.
-Vehicle.Powertrain.Transmission.CurrentPhysicalGear_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.

@@ -14,17 +14,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.ADAS.TCS.IsEnabled_Availability_Actuator:
-  type: sensor
-  datatype: boolean
-  description: Availability of controlling whether the Traction Control System (TCS) is enabled. True = Available. False = Unavailable.
-Vehicle.ADAS.TCS.IsEnabled_Availability_Sensor:
-  type: sensor
-  datatype: boolean
-  description: Availability of sensing whether the Traction Control System (TCS) is enabled. True = Available. False = Unavailable.
-Vehicle.ADAS.TCS.IsEngaged_Availability_Sensor:
-  type: sensor
-  datatype: boolean
-  description: Availability of sensing whether the Traction Control System (TCS) is currently regulating traction. True = Available. False = Unavailable.
 Vehicle.ADAS.TCS.IsError:
-  delete: true 
+  delete: true

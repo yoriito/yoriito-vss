@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.Cabin.Seat.Airbag.IsDeployed_Availability_Sensor:
+Vehicle.Cabin.Seat.Airbag.IsEnabled:
   datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
+  type: actuator
+  description: Airbag enabled status. True = Airbag enabled. False = Airbag not enabled. Modeled as an actuator for safety use cases, e.g. child seat installation.

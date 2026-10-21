@@ -14,26 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.Powertrain.TractionBattery.Charging.ChargingPort.IsFlapOpen_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.TractionBattery.Charging.ChargingPort.IsFlapOpen_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.TractionBattery.Charging.ChargingPort.IsChargingCableConnected_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.TractionBattery.Charging.ChargingPort.IsChargingCableLocked_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.TractionBattery.Charging.ChargingPort.IsChargingCableLocked_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
 Vehicle.Powertrain.TractionBattery.Charging.ChargingPort.IsChargingCableLocked:
   comment: Locking of charging cable can be used to prevent unintentional removing during charging. True = Locked. False = Unlocked.
 Vehicle.Powertrain.TractionBattery.Charging.ChargingPort.IsChargingCableConnected:

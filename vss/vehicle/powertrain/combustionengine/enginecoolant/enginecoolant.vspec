@@ -16,15 +16,3 @@
 
 Vehicle.Powertrain.CombustionEngine.EngineCoolant.Capacity:
  description: Recommended capacity for the engine coolant in liters, not the maximum capacity.
-Vehicle.Powertrain.CombustionEngine.EngineCoolant.Temperature_Availability_Sensor:
- datatype: boolean
- type: sensor
- description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.CombustionEngine.EngineCoolant.Level_Availability_Sensor:
- datatype: boolean
- type: sensor
- description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.CombustionEngine.EngineCoolant.LifeRemaining_Availability_Sensor:
- datatype: boolean
- type: sensor
- description: Availability of sensing the signal. True = Available. False = Unavailable.

@@ -14,33 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.Body.Hood.IsOpen_Availability_Actuator:
-  type: sensor
-  datatype: boolean
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Body.Hood.IsOpen_Availability_Sensor:
-  type: sensor
-  datatype: boolean
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Body.Hood.Position_Availability_Actuator:
-  type: sensor
-  datatype: boolean
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Body.Hood.Position_Availability_Sensor:
-  type: sensor
-  datatype: boolean
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
 Vehicle.Body.Hood.IsLocked:
   type: actuator
   datatype: boolean
   description: Is item locked or unlocked. True = Locked. False = Unlocked. This signal locks the hood in place to prevent any unauthorized opening.
-Vehicle.Body.Hood.IsLocked_Availability_Actuator:
-  type: sensor
-  datatype: boolean
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Body.Hood.IsLocked_Availability_Sensor:
-  type: sensor
-  datatype: boolean
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
 Vehicle.Body.Hood.Switch:
   delete: true

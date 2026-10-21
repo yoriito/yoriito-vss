@@ -14,19 +14,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.Powertrain.TractionBattery.Charging.ChargeVoltage.DC_Availability_Sensor:
-  datatype: boolean
+Vehicle.Powertrain.TractionBattery.Charging.ChargeVoltage.ThreePhaseVoltageMeasurements:
+  datatype: Types.ThreePhaseVoltageMeasurements
   type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Powertrain.TractionBattery.Charging.ChargeVoltage.Phase1_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Powertrain.TractionBattery.Charging.ChargeVoltage.Phase2_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.Powertrain.TractionBattery.Charging.ChargeVoltage.Phase3_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
+  description: Current AC charging voltage (rms) at inlet.
+Vehicle.Powertrain.TractionBattery.Charging.ChargeVoltage.Phase1:
+  delete: true
+Vehicle.Powertrain.TractionBattery.Charging.ChargeVoltage.Phase2:
+  delete: true
+Vehicle.Powertrain.TractionBattery.Charging.ChargeVoltage.Phase3:
+  delete: true

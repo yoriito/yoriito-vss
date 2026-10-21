@@ -14,9 +14,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.Body.Windshield.WasherFluid.Level_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
 Vehicle.Body.Windshield.WasherFluid.IsLevelLow:
   delete: true
