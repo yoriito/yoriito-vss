@@ -14,27 +14,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.Occupant.HeadPosition.X_Availability_Sensor:
-  datatype: boolean
-  type: sensor 
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Occupant.HeadPosition.Y_Availability_Sensor:
-  datatype: boolean
-  type: sensor 
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Occupant.HeadPosition.Z_Availability_Sensor:
-  datatype: boolean
-  type: sensor 
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Occupant.HeadPosition.Yaw_Availability_Sensor:
-  datatype: boolean
-  type: sensor 
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Occupant.HeadPosition.Pitch_Availability_Sensor:
-  datatype: boolean
-  type: sensor 
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Occupant.HeadPosition.Roll_Availability_Sensor:
-  datatype: boolean
-  type: sensor 
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
+Vehicle.Occupant.HeadPosition:
+  datatype: Types.Pose
+  type: sensor
+  description: The current position of the driver head on vehicle axis according to ISO 23150:2023. The object reference point is head center.
+Vehicle.Occupant.HeadPosition.X:
+  delete: true
+Vehicle.Occupant.HeadPosition.Y:
+  delete: true
+Vehicle.Occupant.HeadPosition.Z:
+  delete: true
+Vehicle.Occupant.HeadPosition.Yaw:
+  delete: true
+Vehicle.Occupant.HeadPosition.Pitch:
+  delete: true
+Vehicle.Occupant.HeadPosition.Roll:
+  delete: true

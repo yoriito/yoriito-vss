@@ -1,0 +1,1555 @@
+Vehicle
+├── Powertrain
+│   ├── CombustionEngine
+│   │   ├── EngineCode
+│   │   ├── Displacement
+│   │   ├── StrokeLength
+│   │   ├── Bore
+│   │   ├── Configuration
+│   │   ├── NumberOfCylinders
+│   │   ├── NumberOfValvesPerCylinder
+│   │   ├── CompressionRatio
+│   │   ├── MaxPower
+│   │   ├── MaxTorque
+│   │   ├── AspirationType
+│   │   ├── IsRunning
+│   │   ├── Speed
+│   │   ├── EngineHours
+│   │   ├── IdleHours
+│   │   ├── EngineOil
+│   │   │   ├── Capacity
+│   │   │   ├── Level
+│   │   │   ├── LifeRemaining
+│   │   │   └── Temperature
+│   │   ├── EngineCoolant
+│   │   │   ├── Capacity
+│   │   │   ├── Temperature
+│   │   │   ├── Level
+│   │   │   └── LifeRemaining
+│   │   ├── MAP
+│   │   ├── MAF
+│   │   ├── TPS
+│   │   ├── EOP
+│   │   ├── Power
+│   │   ├── Torque
+│   │   ├── DieselExhaustFluid
+│   │   │   ├── Capacity
+│   │   │   ├── Level
+│   │   │   ├── Range
+│   │   │   └── IsLevelLow
+│   │   └── DieselParticulateFilter
+│   │       ├── InletTemperature
+│   │       ├── OutletTemperature
+│   │       └── DeltaPressure
+│   ├── Transmission
+│   │   ├── Type
+│   │   ├── GearCount
+│   │   ├── DriveType
+│   │   ├── TravelledDistance
+│   │   ├── CurrentGear
+│   │   ├── SelectedGear
+│   │   ├── IsParkLockEngaged
+│   │   ├── IsLowRangeEngaged
+│   │   ├── IsElectricalPowertrainEngaged
+│   │   ├── PerformanceMode
+│   │   ├── GearChangeMode
+│   │   ├── Temperature
+│   │   ├── ClutchEngagement
+│   │   ├── ClutchWear
+│   │   ├── DiffLockFrontEngagement
+│   │   ├── DiffLockRearEngagement
+│   │   ├── TorqueDistribution
+│   │   ├── DiffLockCenterEngagement
+│   │   └── CurrentPhysicalGear
+│   ├── ElectricMotor
+│   │   ├── Number1
+│   │   │   ├── EngineCode
+│   │   │   ├── MaxPower
+│   │   │   ├── MaxTorque
+│   │   │   ├── MaxRegenPower
+│   │   │   ├── MaxRegenTorque
+│   │   │   ├── Speed
+│   │   │   ├── TimeInUse
+│   │   │   ├── Temperature
+│   │   │   ├── EngineCoolant
+│   │   │   │   ├── Capacity
+│   │   │   │   ├── Temperature
+│   │   │   │   ├── Level
+│   │   │   │   └── LifeRemaining
+│   │   │   ├── Power
+│   │   │   └── Torque
+│   │   ├── Number2
+│   │   │   ├── EngineCode
+│   │   │   ├── MaxPower
+│   │   │   ├── MaxTorque
+│   │   │   ├── MaxRegenPower
+│   │   │   ├── MaxRegenTorque
+│   │   │   ├── Speed
+│   │   │   ├── TimeInUse
+│   │   │   ├── Temperature
+│   │   │   ├── EngineCoolant
+│   │   │   │   ├── Capacity
+│   │   │   │   ├── Temperature
+│   │   │   │   ├── Level
+│   │   │   │   └── LifeRemaining
+│   │   │   ├── Power
+│   │   │   └── Torque
+│   │   ├── Number3
+│   │   │   ├── EngineCode
+│   │   │   ├── MaxPower
+│   │   │   ├── MaxTorque
+│   │   │   ├── MaxRegenPower
+│   │   │   ├── MaxRegenTorque
+│   │   │   ├── Speed
+│   │   │   ├── TimeInUse
+│   │   │   ├── Temperature
+│   │   │   ├── EngineCoolant
+│   │   │   │   ├── Capacity
+│   │   │   │   ├── Temperature
+│   │   │   │   ├── Level
+│   │   │   │   └── LifeRemaining
+│   │   │   ├── Power
+│   │   │   └── Torque
+│   │   └── Number4
+│   │       ├── EngineCode
+│   │       ├── MaxPower
+│   │       ├── MaxTorque
+│   │       ├── MaxRegenPower
+│   │       ├── MaxRegenTorque
+│   │       ├── Speed
+│   │       ├── TimeInUse
+│   │       ├── Temperature
+│   │       ├── EngineCoolant
+│   │       │   ├── Capacity
+│   │       │   ├── Temperature
+│   │       │   ├── Level
+│   │       │   └── LifeRemaining
+│   │       ├── Power
+│   │       └── Torque
+│   ├── TractionBattery
+│   │   ├── NominalVoltage
+│   │   ├── MaxVoltage
+│   │   ├── Range
+│   │   ├── TimeRemaining
+│   │   ├── Charging
+│   │   │   ├── ChargingPort
+│   │   │   │   ├── FrontLeft
+│   │   │   │   │   ├── SupportedInletTypes
+│   │   │   │   │   ├── IsFlapOpen
+│   │   │   │   │   ├── IsChargingCableConnected
+│   │   │   │   │   └── IsChargingCableLocked
+│   │   │   │   ├── FrontMiddle
+│   │   │   │   │   ├── SupportedInletTypes
+│   │   │   │   │   ├── IsFlapOpen
+│   │   │   │   │   ├── IsChargingCableConnected
+│   │   │   │   │   └── IsChargingCableLocked
+│   │   │   │   ├── FrontRight
+│   │   │   │   │   ├── SupportedInletTypes
+│   │   │   │   │   ├── IsFlapOpen
+│   │   │   │   │   ├── IsChargingCableConnected
+│   │   │   │   │   └── IsChargingCableLocked
+│   │   │   │   ├── RearLeft
+│   │   │   │   │   ├── SupportedInletTypes
+│   │   │   │   │   ├── IsFlapOpen
+│   │   │   │   │   ├── IsChargingCableConnected
+│   │   │   │   │   └── IsChargingCableLocked
+│   │   │   │   ├── RearMiddle
+│   │   │   │   │   ├── SupportedInletTypes
+│   │   │   │   │   ├── IsFlapOpen
+│   │   │   │   │   ├── IsChargingCableConnected
+│   │   │   │   │   └── IsChargingCableLocked
+│   │   │   │   ├── RearRight
+│   │   │   │   │   ├── SupportedInletTypes
+│   │   │   │   │   ├── IsFlapOpen
+│   │   │   │   │   ├── IsChargingCableConnected
+│   │   │   │   │   └── IsChargingCableLocked
+│   │   │   │   └── AnyPosition
+│   │   │   │       ├── SupportedInletTypes
+│   │   │   │       ├── IsFlapOpen
+│   │   │   │       ├── IsChargingCableConnected
+│   │   │   │       └── IsChargingCableLocked
+│   │   │   ├── ChargeLimit
+│   │   │   ├── MaximumChargingCurrent
+│   │   │   │   ├── DC
+│   │   │   │   └── ThreePhaseCurrentMeasurements
+│   │   │   ├── IsCharging
+│   │   │   ├── IsDischarging
+│   │   │   ├── StartStopCharging
+│   │   │   ├── ChargeCurrent
+│   │   │   │   ├── DC
+│   │   │   │   └── ThreePhaseCurrentMeasurements
+│   │   │   ├── ChargeVoltage
+│   │   │   │   ├── DC
+│   │   │   │   └── ThreePhaseVoltageMeasurements
+│   │   │   ├── AveragePower
+│   │   │   ├── MaxPower
+│   │   │   ├── EvseId
+│   │   │   ├── Location
+│   │   │   ├── PowerLoss
+│   │   │   ├── Temperature
+│   │   │   ├── ChargeRate
+│   │   │   ├── TimeToComplete
+│   │   │   └── Timer
+│   │   │       ├── Mode
+│   │   │       └── Time
+│   │   ├── DCDC
+│   │   │   ├── PowerLoss
+│   │   │   └── Temperature
+│   │   ├── TotalGrossCapacity
+│   │   ├── TotalNetCapacity
+│   │   ├── TotalStateOfCharge
+│   │   │   ├── Current
+│   │   │   └── Displayed
+│   │   ├── TotalElectricity
+│   │   ├── TotalCurrentPower
+│   │   ├── EnergyConsumption
+│   │   ├── Number1
+│   │   │   ├── Id
+│   │   │   ├── ProductionDate
+│   │   │   ├── ErrorCodes
+│   │   │   ├── IsPowerConnected
+│   │   │   ├── IsGroundConnected
+│   │   │   ├── Temperature
+│   │   │   │   ├── Average
+│   │   │   │   ├── Min
+│   │   │   │   └── Max
+│   │   │   ├── CellVoltage
+│   │   │   │   ├── Min
+│   │   │   │   ├── IdMin
+│   │   │   │   ├── Max
+│   │   │   │   └── IdMax
+│   │   │   ├── GrossCapacity
+│   │   │   ├── NetCapacity
+│   │   │   ├── StateOfHealth
+│   │   │   ├── StateOfCharge
+│   │   │   │   ├── Current
+│   │   │   │   └── Displayed
+│   │   │   ├── CurrentPower
+│   │   │   ├── AccumulatedChargedEnergy
+│   │   │   ├── AccumulatedConsumedEnergy
+│   │   │   ├── AccumulatedChargedThroughput
+│   │   │   ├── AccumulatedConsumedThroughput
+│   │   │   ├── PowerLoss
+│   │   │   ├── BatteryConditioning
+│   │   │   │   ├── IsActive
+│   │   │   │   ├── IsOngoing
+│   │   │   │   ├── RequestedMode
+│   │   │   │   ├── StartTime
+│   │   │   │   ├── TargetTime
+│   │   │   │   └── TargetTemperature
+│   │   │   ├── Cells
+│   │   │   │   ├── Number1
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number2
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number3
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number4
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number5
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number6
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number7
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number8
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number9
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   └── Number10
+│   │   │   │       ├── Temperature
+│   │   │   │       └── Voltage
+│   │   │   └── CurrentElectricity
+│   │   ├── Number2
+│   │   │   ├── Id
+│   │   │   ├── ProductionDate
+│   │   │   ├── ErrorCodes
+│   │   │   ├── IsPowerConnected
+│   │   │   ├── IsGroundConnected
+│   │   │   ├── Temperature
+│   │   │   │   ├── Average
+│   │   │   │   ├── Min
+│   │   │   │   └── Max
+│   │   │   ├── CellVoltage
+│   │   │   │   ├── Min
+│   │   │   │   ├── IdMin
+│   │   │   │   ├── Max
+│   │   │   │   └── IdMax
+│   │   │   ├── GrossCapacity
+│   │   │   ├── NetCapacity
+│   │   │   ├── StateOfHealth
+│   │   │   ├── StateOfCharge
+│   │   │   │   ├── Current
+│   │   │   │   └── Displayed
+│   │   │   ├── CurrentPower
+│   │   │   ├── AccumulatedChargedEnergy
+│   │   │   ├── AccumulatedConsumedEnergy
+│   │   │   ├── AccumulatedChargedThroughput
+│   │   │   ├── AccumulatedConsumedThroughput
+│   │   │   ├── PowerLoss
+│   │   │   ├── BatteryConditioning
+│   │   │   │   ├── IsActive
+│   │   │   │   ├── IsOngoing
+│   │   │   │   ├── RequestedMode
+│   │   │   │   ├── StartTime
+│   │   │   │   ├── TargetTime
+│   │   │   │   └── TargetTemperature
+│   │   │   ├── Cells
+│   │   │   │   ├── Number1
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number2
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number3
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number4
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number5
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number6
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number7
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number8
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number9
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   └── Number10
+│   │   │   │       ├── Temperature
+│   │   │   │       └── Voltage
+│   │   │   └── CurrentElectricity
+│   │   ├── Number3
+│   │   │   ├── Id
+│   │   │   ├── ProductionDate
+│   │   │   ├── ErrorCodes
+│   │   │   ├── IsPowerConnected
+│   │   │   ├── IsGroundConnected
+│   │   │   ├── Temperature
+│   │   │   │   ├── Average
+│   │   │   │   ├── Min
+│   │   │   │   └── Max
+│   │   │   ├── CellVoltage
+│   │   │   │   ├── Min
+│   │   │   │   ├── IdMin
+│   │   │   │   ├── Max
+│   │   │   │   └── IdMax
+│   │   │   ├── GrossCapacity
+│   │   │   ├── NetCapacity
+│   │   │   ├── StateOfHealth
+│   │   │   ├── StateOfCharge
+│   │   │   │   ├── Current
+│   │   │   │   └── Displayed
+│   │   │   ├── CurrentPower
+│   │   │   ├── AccumulatedChargedEnergy
+│   │   │   ├── AccumulatedConsumedEnergy
+│   │   │   ├── AccumulatedChargedThroughput
+│   │   │   ├── AccumulatedConsumedThroughput
+│   │   │   ├── PowerLoss
+│   │   │   ├── BatteryConditioning
+│   │   │   │   ├── IsActive
+│   │   │   │   ├── IsOngoing
+│   │   │   │   ├── RequestedMode
+│   │   │   │   ├── StartTime
+│   │   │   │   ├── TargetTime
+│   │   │   │   └── TargetTemperature
+│   │   │   ├── Cells
+│   │   │   │   ├── Number1
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number2
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number3
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number4
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number5
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number6
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number7
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number8
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   ├── Number9
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── Voltage
+│   │   │   │   └── Number10
+│   │   │   │       ├── Temperature
+│   │   │   │       └── Voltage
+│   │   │   └── CurrentElectricity
+│   │   └── Number4
+│   │       ├── Id
+│   │       ├── ProductionDate
+│   │       ├── ErrorCodes
+│   │       ├── IsPowerConnected
+│   │       ├── IsGroundConnected
+│   │       ├── Temperature
+│   │       │   ├── Average
+│   │       │   ├── Min
+│   │       │   └── Max
+│   │       ├── CellVoltage
+│   │       │   ├── Min
+│   │       │   ├── IdMin
+│   │       │   ├── Max
+│   │       │   └── IdMax
+│   │       ├── GrossCapacity
+│   │       ├── NetCapacity
+│   │       ├── StateOfHealth
+│   │       ├── StateOfCharge
+│   │       │   ├── Current
+│   │       │   └── Displayed
+│   │       ├── CurrentPower
+│   │       ├── AccumulatedChargedEnergy
+│   │       ├── AccumulatedConsumedEnergy
+│   │       ├── AccumulatedChargedThroughput
+│   │       ├── AccumulatedConsumedThroughput
+│   │       ├── PowerLoss
+│   │       ├── BatteryConditioning
+│   │       │   ├── IsActive
+│   │       │   ├── IsOngoing
+│   │       │   ├── RequestedMode
+│   │       │   ├── StartTime
+│   │       │   ├── TargetTime
+│   │       │   └── TargetTemperature
+│   │       ├── Cells
+│   │       │   ├── Number1
+│   │       │   │   ├── Temperature
+│   │       │   │   └── Voltage
+│   │       │   ├── Number2
+│   │       │   │   ├── Temperature
+│   │       │   │   └── Voltage
+│   │       │   ├── Number3
+│   │       │   │   ├── Temperature
+│   │       │   │   └── Voltage
+│   │       │   ├── Number4
+│   │       │   │   ├── Temperature
+│   │       │   │   └── Voltage
+│   │       │   ├── Number5
+│   │       │   │   ├── Temperature
+│   │       │   │   └── Voltage
+│   │       │   ├── Number6
+│   │       │   │   ├── Temperature
+│   │       │   │   └── Voltage
+│   │       │   ├── Number7
+│   │       │   │   ├── Temperature
+│   │       │   │   └── Voltage
+│   │       │   ├── Number8
+│   │       │   │   ├── Temperature
+│   │       │   │   └── Voltage
+│   │       │   ├── Number9
+│   │       │   │   ├── Temperature
+│   │       │   │   └── Voltage
+│   │       │   └── Number10
+│   │       │       ├── Temperature
+│   │       │       └── Voltage
+│   │       └── CurrentElectricity
+│   ├── FuelSystem
+│   │   ├── SupportedFuel
+│   │   ├── TankCapacity
+│   │   ├── AbsoluteLevel
+│   │   ├── RelativeLevel
+│   │   ├── Range
+│   │   ├── TimeRemaining
+│   │   ├── InstantConsumption
+│   │   ├── AverageConsumption
+│   │   ├── ConsumptionSinceStart
+│   │   ├── ConsumptionSinceLastRefuel
+│   │   ├── IsEngineStopStartEnabled
+│   │   ├── IsFuelLevelLow
+│   │   ├── IsFuelLevelEmpty
+│   │   ├── RefuelPortPosition
+│   │   ├── IsFuelPortFlapOpen
+│   │   ├── CumulativeFuelEconomy
+│   │   ├── DriveFuelEconomy
+│   │   ├── AfterRefuelingFuelEconomy
+│   │   └── InstantFuelEconomy
+│   ├── RangeExtender
+│   │   ├── OperatingMode
+│   │   ├── ChargeDepleting
+│   │   │   ├── EnergyConsumption
+│   │   │   └── Range
+│   │   ├── ChargeSustaining
+│   │   │   ├── FuelEconomy
+│   │   │   └── Range
+│   │   └── CombinedFuelEconomy
+│   ├── AccumulatedBrakingEnergy
+│   ├── Range
+│   ├── TimeRemaining
+│   ├── Type
+│   ├── PowerOptimizeLevel
+│   └── IsAutoPowerOptimize
+├── Body
+│   ├── Hood
+│   │   ├── IsOpen
+│   │   ├── Position
+│   │   └── IsLocked
+│   ├── Trunk
+│   │   ├── Front
+│   │   │   ├── IsLightOn
+│   │   │   ├── IsLocked
+│   │   │   ├── IsOpen
+│   │   │   └── Position
+│   │   └── Rear
+│   │       ├── IsLightOn
+│   │       ├── IsLocked
+│   │       ├── IsOpen
+│   │       └── Position
+│   ├── Horn
+│   │   └── IsActive
+│   ├── Raindetection
+│   │   └── Intensity
+│   ├── Windshield
+│   │   ├── Front
+│   │   │   ├── Wiping
+│   │   │   │   ├── Mode
+│   │   │   │   ├── Intensity
+│   │   │   │   ├── System
+│   │   │   │   │   ├── Mode
+│   │   │   │   │   ├── Frequency
+│   │   │   │   │   ├── DriveCurrent
+│   │   │   │   │   ├── IsWiping
+│   │   │   │   │   ├── IsEndingWipeCycle
+│   │   │   │   │   ├── IsWiperError
+│   │   │   │   │   ├── IsPositionReached
+│   │   │   │   │   ├── IsBlocked
+│   │   │   │   │   ├── IsOverheated
+│   │   │   │   │   └── Position
+│   │   │   │   ├── WiperWear
+│   │   │   │   └── IsWipersWorn
+│   │   │   ├── IsHeatingOn
+│   │   │   └── WasherFluid
+│   │   │       └── Level
+│   │   └── Rear
+│   │       ├── Wiping
+│   │       │   ├── Mode
+│   │       │   ├── Intensity
+│   │       │   ├── System
+│   │       │   │   ├── Mode
+│   │       │   │   ├── Frequency
+│   │       │   │   ├── DriveCurrent
+│   │       │   │   ├── IsWiping
+│   │       │   │   ├── IsEndingWipeCycle
+│   │       │   │   ├── IsWiperError
+│   │       │   │   ├── IsPositionReached
+│   │       │   │   ├── IsBlocked
+│   │       │   │   ├── IsOverheated
+│   │       │   │   └── Position
+│   │       │   ├── WiperWear
+│   │       │   └── IsWipersWorn
+│   │       ├── IsHeatingOn
+│   │       └── WasherFluid
+│   │           └── Level
+│   ├── Lights
+│   │   ├── Beam
+│   │   │   ├── Low
+│   │   │   │   ├── IsOn
+│   │   │   │   └── IsDefect
+│   │   │   └── High
+│   │   │       ├── IsOn
+│   │   │       └── IsDefect
+│   │   ├── Running
+│   │   │   ├── IsOn
+│   │   │   └── IsDefect
+│   │   ├── Backup
+│   │   │   ├── IsOn
+│   │   │   └── IsDefect
+│   │   ├── Parking
+│   │   │   ├── IsOn
+│   │   │   └── IsDefect
+│   │   ├── Fog
+│   │   │   ├── Rear
+│   │   │   │   ├── IsOn
+│   │   │   │   └── IsDefect
+│   │   │   └── Front
+│   │   │       ├── IsOn
+│   │   │       └── IsDefect
+│   │   ├── LicensePlate
+│   │   │   ├── IsOn
+│   │   │   └── IsDefect
+│   │   ├── Brake
+│   │   │   ├── IsActive
+│   │   │   └── IsDefect
+│   │   ├── Hazard
+│   │   │   ├── IsSignaling
+│   │   │   └── IsDefect
+│   │   └── DirectionIndicator
+│   │       ├── Left
+│   │       │   ├── IsSignaling
+│   │       │   └── IsDefect
+│   │       └── Right
+│   │           ├── IsSignaling
+│   │           └── IsDefect
+│   ├── Mirrors
+│   │   ├── DriverSide
+│   │   │   ├── Tilt
+│   │   │   ├── Yaw
+│   │   │   ├── IsHeatingOn
+│   │   │   ├── IsLocked
+│   │   │   └── IsFolded
+│   │   └── PassengerSide
+│   │       ├── Tilt
+│   │       ├── Yaw
+│   │       ├── IsHeatingOn
+│   │       ├── IsLocked
+│   │       └── IsFolded
+│   ├── RearMainSpoilerPosition
+│   ├── PowerOptimizeLevel
+│   └── IsAutoPowerOptimize
+├── Cabin
+│   ├── RearShade
+│   │   ├── IsOpen
+│   │   └── Position
+│   ├── HVAC
+│   │   ├── Station
+│   │   │   ├── Row1
+│   │   │   │   ├── DriverSide
+│   │   │   │   │   ├── FanSpeed
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── AirDistribution
+│   │   │   │   └── PassengerSide
+│   │   │   │       ├── FanSpeed
+│   │   │   │       ├── Temperature
+│   │   │   │       └── AirDistribution
+│   │   │   ├── Row2
+│   │   │   │   ├── DriverSide
+│   │   │   │   │   ├── FanSpeed
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── AirDistribution
+│   │   │   │   └── PassengerSide
+│   │   │   │       ├── FanSpeed
+│   │   │   │       ├── Temperature
+│   │   │   │       └── AirDistribution
+│   │   │   ├── Row3
+│   │   │   │   ├── DriverSide
+│   │   │   │   │   ├── FanSpeed
+│   │   │   │   │   ├── Temperature
+│   │   │   │   │   └── AirDistribution
+│   │   │   │   └── PassengerSide
+│   │   │   │       ├── FanSpeed
+│   │   │   │       ├── Temperature
+│   │   │   │       └── AirDistribution
+│   │   │   └── Row4
+│   │   │       ├── DriverSide
+│   │   │       │   ├── FanSpeed
+│   │   │       │   ├── Temperature
+│   │   │       │   └── AirDistribution
+│   │   │       └── PassengerSide
+│   │   │           ├── FanSpeed
+│   │   │           ├── Temperature
+│   │   │           └── AirDistribution
+│   │   ├── IsRecirculationActive
+│   │   ├── IsFrontDefrosterActive
+│   │   ├── IsRearDefrosterActive
+│   │   ├── IsAirConditioningActive
+│   │   ├── AmbientAirTemperature
+│   │   ├── PowerOptimizeLevel
+│   │   └── IsAutoPowerOptimize
+│   ├── Sunroof
+│   │   ├── Shade
+│   │   │   ├── IsOpen
+│   │   │   └── Position
+│   │   ├── Slide
+│   │   └── Tilt
+│   ├── RearviewMirror
+│   │   └── DimmingLevel
+│   ├── Light
+│   │   ├── IsGloveBoxOn
+│   │   ├── PerceivedAmbientLight
+│   │   ├── Spotlight
+│   │   │   ├── Row1
+│   │   │   │   ├── DriverSide
+│   │   │   │   │   ├── IsLightOn
+│   │   │   │   │   ├── Intensity
+│   │   │   │   │   └── Color
+│   │   │   │   └── PassengerSide
+│   │   │   │       ├── IsLightOn
+│   │   │   │       ├── Intensity
+│   │   │   │       └── Color
+│   │   │   ├── Row2
+│   │   │   │   ├── DriverSide
+│   │   │   │   │   ├── IsLightOn
+│   │   │   │   │   ├── Intensity
+│   │   │   │   │   └── Color
+│   │   │   │   └── PassengerSide
+│   │   │   │       ├── IsLightOn
+│   │   │   │       ├── Intensity
+│   │   │   │       └── Color
+│   │   │   ├── Row3
+│   │   │   │   ├── DriverSide
+│   │   │   │   │   ├── IsLightOn
+│   │   │   │   │   ├── Intensity
+│   │   │   │   │   └── Color
+│   │   │   │   └── PassengerSide
+│   │   │   │       ├── IsLightOn
+│   │   │   │       ├── Intensity
+│   │   │   │       └── Color
+│   │   │   └── Row4
+│   │   │       ├── DriverSide
+│   │   │       │   ├── IsLightOn
+│   │   │       │   ├── Intensity
+│   │   │       │   └── Color
+│   │   │       └── PassengerSide
+│   │   │           ├── IsLightOn
+│   │   │           ├── Intensity
+│   │   │           └── Color
+│   │   ├── DomeLight
+│   │   │   ├── IsLightOn
+│   │   │   ├── Intensity
+│   │   │   └── Color
+│   │   └── FootwellLight
+│   │       ├── Row1
+│   │       │   ├── DriverSide
+│   │       │   │   ├── IsLightOn
+│   │       │   │   ├── Intensity
+│   │       │   │   └── Color
+│   │       │   └── PassengerSide
+│   │       │       ├── IsLightOn
+│   │       │       ├── Intensity
+│   │       │       └── Color
+│   │       ├── Row2
+│   │       │   ├── DriverSide
+│   │       │   │   ├── IsLightOn
+│   │       │   │   ├── Intensity
+│   │       │   │   └── Color
+│   │       │   └── PassengerSide
+│   │       │       ├── IsLightOn
+│   │       │       ├── Intensity
+│   │       │       └── Color
+│   │       ├── Row3
+│   │       │   ├── DriverSide
+│   │       │   │   ├── IsLightOn
+│   │       │   │   ├── Intensity
+│   │       │   │   └── Color
+│   │       │   └── PassengerSide
+│   │       │       ├── IsLightOn
+│   │       │       ├── Intensity
+│   │       │       └── Color
+│   │       └── Row4
+│   │           ├── DriverSide
+│   │           │   ├── IsLightOn
+│   │           │   ├── Intensity
+│   │           │   └── Color
+│   │           └── PassengerSide
+│   │               ├── IsLightOn
+│   │               ├── Intensity
+│   │               └── Color
+│   ├── Door
+│   │   ├── Row1
+│   │   │   ├── DriverSide
+│   │   │   │   ├── Window
+│   │   │   │   │   ├── IsOpen
+│   │   │   │   │   └── Position
+│   │   │   │   ├── IsChildLockActive
+│   │   │   │   ├── Shade
+│   │   │   │   │   ├── IsOpen
+│   │   │   │   │   └── Position
+│   │   │   │   ├── IsLocked
+│   │   │   │   ├── IsOpen
+│   │   │   │   └── Position
+│   │   │   └── PassengerSide
+│   │   │       ├── Window
+│   │   │       │   ├── IsOpen
+│   │   │       │   └── Position
+│   │   │       ├── IsChildLockActive
+│   │   │       ├── Shade
+│   │   │       │   ├── IsOpen
+│   │   │       │   └── Position
+│   │   │       ├── IsLocked
+│   │   │       ├── IsOpen
+│   │   │       └── Position
+│   │   └── Row2
+│   │       ├── DriverSide
+│   │       │   ├── Window
+│   │       │   │   ├── IsOpen
+│   │       │   │   └── Position
+│   │       │   ├── IsChildLockActive
+│   │       │   ├── Shade
+│   │       │   │   ├── IsOpen
+│   │       │   │   └── Position
+│   │       │   ├── IsLocked
+│   │       │   ├── IsOpen
+│   │       │   └── Position
+│   │       └── PassengerSide
+│   │           ├── Window
+│   │           │   ├── IsOpen
+│   │           │   └── Position
+│   │           ├── IsChildLockActive
+│   │           ├── Shade
+│   │           │   ├── IsOpen
+│   │           │   └── Position
+│   │           ├── IsLocked
+│   │           ├── IsOpen
+│   │           └── Position
+│   ├── DoorCount
+│   ├── IsWindowChildLockEngaged
+│   ├── Seat
+│   │   ├── Row1
+│   │   │   ├── DriverSide
+│   │   │   │   ├── OccupancyStatus
+│   │   │   │   ├── IsBelted
+│   │   │   │   ├── SeatBeltHeight
+│   │   │   │   ├── Massage
+│   │   │   │   │   ├── IsAvailable
+│   │   │   │   │   ├── Level
+│   │   │   │   │   ├── Status
+│   │   │   │   │   ├── SupportedTypes
+│   │   │   │   │   └── TypeActive
+│   │   │   │   ├── Position
+│   │   │   │   ├── Height
+│   │   │   │   ├── Tilt
+│   │   │   │   ├── Backrest
+│   │   │   │   │   ├── Recline
+│   │   │   │   │   ├── LumbarSupport
+│   │   │   │   │   ├── TopLumbarSupport
+│   │   │   │   │   ├── MidLumbarSupport
+│   │   │   │   │   ├── BottomLumbarSupport
+│   │   │   │   │   ├── LumbarHeight
+│   │   │   │   │   ├── SideBolsterSupport
+│   │   │   │   │   ├── SideBolsterSupportLeft
+│   │   │   │   │   ├── SideBolsterSupportRight
+│   │   │   │   │   ├── UpperShoulderSupport
+│   │   │   │   │   ├── HeatingCooling
+│   │   │   │   │   └── Ventilator
+│   │   │   │   ├── Seating
+│   │   │   │   │   ├── Length
+│   │   │   │   │   ├── SideBolsterSupportRight
+│   │   │   │   │   ├── SideBolsterSupportLeft
+│   │   │   │   │   ├── HeatingCooling
+│   │   │   │   │   └── Ventilator
+│   │   │   │   ├── Headrest
+│   │   │   │   │   ├── Height
+│   │   │   │   │   └── Angle
+│   │   │   │   ├── Airbag
+│   │   │   │   │   ├── IsEnabled
+│   │   │   │   │   └── IsDeployed
+│   │   │   │   ├── NeckScarf
+│   │   │   │   │   ├── HeatingCooling
+│   │   │   │   │   └── FanSpeed
+│   │   │   │   ├── HeatingCooling
+│   │   │   │   └── Ventilator
+│   │   │   ├── Middle
+│   │   │   │   ├── OccupancyStatus
+│   │   │   │   ├── IsBelted
+│   │   │   │   ├── SeatBeltHeight
+│   │   │   │   ├── Massage
+│   │   │   │   │   ├── IsAvailable
+│   │   │   │   │   ├── Level
+│   │   │   │   │   ├── Status
+│   │   │   │   │   ├── SupportedTypes
+│   │   │   │   │   └── TypeActive
+│   │   │   │   ├── Position
+│   │   │   │   ├── Height
+│   │   │   │   ├── Tilt
+│   │   │   │   ├── Backrest
+│   │   │   │   │   ├── Recline
+│   │   │   │   │   ├── LumbarSupport
+│   │   │   │   │   ├── TopLumbarSupport
+│   │   │   │   │   ├── MidLumbarSupport
+│   │   │   │   │   ├── BottomLumbarSupport
+│   │   │   │   │   ├── LumbarHeight
+│   │   │   │   │   ├── SideBolsterSupport
+│   │   │   │   │   ├── SideBolsterSupportLeft
+│   │   │   │   │   ├── SideBolsterSupportRight
+│   │   │   │   │   ├── UpperShoulderSupport
+│   │   │   │   │   ├── HeatingCooling
+│   │   │   │   │   └── Ventilator
+│   │   │   │   ├── Seating
+│   │   │   │   │   ├── Length
+│   │   │   │   │   ├── SideBolsterSupportRight
+│   │   │   │   │   ├── SideBolsterSupportLeft
+│   │   │   │   │   ├── HeatingCooling
+│   │   │   │   │   └── Ventilator
+│   │   │   │   ├── Headrest
+│   │   │   │   │   ├── Height
+│   │   │   │   │   └── Angle
+│   │   │   │   ├── Airbag
+│   │   │   │   │   ├── IsEnabled
+│   │   │   │   │   └── IsDeployed
+│   │   │   │   ├── NeckScarf
+│   │   │   │   │   ├── HeatingCooling
+│   │   │   │   │   └── FanSpeed
+│   │   │   │   ├── HeatingCooling
+│   │   │   │   └── Ventilator
+│   │   │   └── PassengerSide
+│   │   │       ├── OccupancyStatus
+│   │   │       ├── IsBelted
+│   │   │       ├── SeatBeltHeight
+│   │   │       ├── Massage
+│   │   │       │   ├── IsAvailable
+│   │   │       │   ├── Level
+│   │   │       │   ├── Status
+│   │   │       │   ├── SupportedTypes
+│   │   │       │   └── TypeActive
+│   │   │       ├── Position
+│   │   │       ├── Height
+│   │   │       ├── Tilt
+│   │   │       ├── Backrest
+│   │   │       │   ├── Recline
+│   │   │       │   ├── LumbarSupport
+│   │   │       │   ├── TopLumbarSupport
+│   │   │       │   ├── MidLumbarSupport
+│   │   │       │   ├── BottomLumbarSupport
+│   │   │       │   ├── LumbarHeight
+│   │   │       │   ├── SideBolsterSupport
+│   │   │       │   ├── SideBolsterSupportLeft
+│   │   │       │   ├── SideBolsterSupportRight
+│   │   │       │   ├── UpperShoulderSupport
+│   │   │       │   ├── HeatingCooling
+│   │   │       │   └── Ventilator
+│   │   │       ├── Seating
+│   │   │       │   ├── Length
+│   │   │       │   ├── SideBolsterSupportRight
+│   │   │       │   ├── SideBolsterSupportLeft
+│   │   │       │   ├── HeatingCooling
+│   │   │       │   └── Ventilator
+│   │   │       ├── Headrest
+│   │   │       │   ├── Height
+│   │   │       │   └── Angle
+│   │   │       ├── Airbag
+│   │   │       │   ├── IsEnabled
+│   │   │       │   └── IsDeployed
+│   │   │       ├── NeckScarf
+│   │   │       │   ├── HeatingCooling
+│   │   │       │   └── FanSpeed
+│   │   │       ├── HeatingCooling
+│   │   │       └── Ventilator
+│   │   └── Row2
+│   │       ├── DriverSide
+│   │       │   ├── OccupancyStatus
+│   │       │   ├── IsBelted
+│   │       │   ├── SeatBeltHeight
+│   │       │   ├── Massage
+│   │       │   │   ├── IsAvailable
+│   │       │   │   ├── Level
+│   │       │   │   ├── Status
+│   │       │   │   ├── SupportedTypes
+│   │       │   │   └── TypeActive
+│   │       │   ├── Position
+│   │       │   ├── Height
+│   │       │   ├── Tilt
+│   │       │   ├── Backrest
+│   │       │   │   ├── Recline
+│   │       │   │   ├── LumbarSupport
+│   │       │   │   ├── TopLumbarSupport
+│   │       │   │   ├── MidLumbarSupport
+│   │       │   │   ├── BottomLumbarSupport
+│   │       │   │   ├── LumbarHeight
+│   │       │   │   ├── SideBolsterSupport
+│   │       │   │   ├── SideBolsterSupportLeft
+│   │       │   │   ├── SideBolsterSupportRight
+│   │       │   │   ├── UpperShoulderSupport
+│   │       │   │   ├── HeatingCooling
+│   │       │   │   └── Ventilator
+│   │       │   ├── Seating
+│   │       │   │   ├── Length
+│   │       │   │   ├── SideBolsterSupportRight
+│   │       │   │   ├── SideBolsterSupportLeft
+│   │       │   │   ├── HeatingCooling
+│   │       │   │   └── Ventilator
+│   │       │   ├── Headrest
+│   │       │   │   ├── Height
+│   │       │   │   └── Angle
+│   │       │   ├── Airbag
+│   │       │   │   ├── IsEnabled
+│   │       │   │   └── IsDeployed
+│   │       │   ├── NeckScarf
+│   │       │   │   ├── HeatingCooling
+│   │       │   │   └── FanSpeed
+│   │       │   ├── HeatingCooling
+│   │       │   └── Ventilator
+│   │       ├── Middle
+│   │       │   ├── OccupancyStatus
+│   │       │   ├── IsBelted
+│   │       │   ├── SeatBeltHeight
+│   │       │   ├── Massage
+│   │       │   │   ├── IsAvailable
+│   │       │   │   ├── Level
+│   │       │   │   ├── Status
+│   │       │   │   ├── SupportedTypes
+│   │       │   │   └── TypeActive
+│   │       │   ├── Position
+│   │       │   ├── Height
+│   │       │   ├── Tilt
+│   │       │   ├── Backrest
+│   │       │   │   ├── Recline
+│   │       │   │   ├── LumbarSupport
+│   │       │   │   ├── TopLumbarSupport
+│   │       │   │   ├── MidLumbarSupport
+│   │       │   │   ├── BottomLumbarSupport
+│   │       │   │   ├── LumbarHeight
+│   │       │   │   ├── SideBolsterSupport
+│   │       │   │   ├── SideBolsterSupportLeft
+│   │       │   │   ├── SideBolsterSupportRight
+│   │       │   │   ├── UpperShoulderSupport
+│   │       │   │   ├── HeatingCooling
+│   │       │   │   └── Ventilator
+│   │       │   ├── Seating
+│   │       │   │   ├── Length
+│   │       │   │   ├── SideBolsterSupportRight
+│   │       │   │   ├── SideBolsterSupportLeft
+│   │       │   │   ├── HeatingCooling
+│   │       │   │   └── Ventilator
+│   │       │   ├── Headrest
+│   │       │   │   ├── Height
+│   │       │   │   └── Angle
+│   │       │   ├── Airbag
+│   │       │   │   ├── IsEnabled
+│   │       │   │   └── IsDeployed
+│   │       │   ├── NeckScarf
+│   │       │   │   ├── HeatingCooling
+│   │       │   │   └── FanSpeed
+│   │       │   ├── HeatingCooling
+│   │       │   └── Ventilator
+│   │       └── PassengerSide
+│   │           ├── OccupancyStatus
+│   │           ├── IsBelted
+│   │           ├── SeatBeltHeight
+│   │           ├── Massage
+│   │           │   ├── IsAvailable
+│   │           │   ├── Level
+│   │           │   ├── Status
+│   │           │   ├── SupportedTypes
+│   │           │   └── TypeActive
+│   │           ├── Position
+│   │           ├── Height
+│   │           ├── Tilt
+│   │           ├── Backrest
+│   │           │   ├── Recline
+│   │           │   ├── LumbarSupport
+│   │           │   ├── TopLumbarSupport
+│   │           │   ├── MidLumbarSupport
+│   │           │   ├── BottomLumbarSupport
+│   │           │   ├── LumbarHeight
+│   │           │   ├── SideBolsterSupport
+│   │           │   ├── SideBolsterSupportLeft
+│   │           │   ├── SideBolsterSupportRight
+│   │           │   ├── UpperShoulderSupport
+│   │           │   ├── HeatingCooling
+│   │           │   └── Ventilator
+│   │           ├── Seating
+│   │           │   ├── Length
+│   │           │   ├── SideBolsterSupportRight
+│   │           │   ├── SideBolsterSupportLeft
+│   │           │   ├── HeatingCooling
+│   │           │   └── Ventilator
+│   │           ├── Headrest
+│   │           │   ├── Height
+│   │           │   └── Angle
+│   │           ├── Airbag
+│   │           │   ├── IsEnabled
+│   │           │   └── IsDeployed
+│   │           ├── NeckScarf
+│   │           │   ├── HeatingCooling
+│   │           │   └── FanSpeed
+│   │           ├── HeatingCooling
+│   │           └── Ventilator
+│   ├── DriverPosition
+│   ├── SeatRowCount
+│   ├── SeatPosCount
+│   ├── Convertible
+│   │   ├── IsOpen
+│   │   └── Position
+│   ├── PowerOptimizeLevel
+│   └── IsAutoPowerOptimize
+├── ADAS
+│   ├── ActiveAutonomyLevel
+│   ├── SupportedAutonomyLevel
+│   ├── CruiseControl
+│   │   ├── IsEnabled
+│   │   ├── IsActive
+│   │   ├── SpeedSet
+│   │   ├── IsAdaptive
+│   │   ├── AdaptiveDistanceSet
+│   │   ├── AdaptiveIntervalSet
+│   │   └── DegradationStatus
+│   ├── LaneDepartureDetection
+│   │   ├── IsEnabled
+│   │   ├── IsWarning
+│   │   └── DegradationStatus
+│   ├── ObstacleDetection
+│   │   ├── Front
+│   │   │   ├── Left
+│   │   │   │   ├── IsEnabled
+│   │   │   │   ├── IsWarning
+│   │   │   │   ├── Distance
+│   │   │   │   ├── TimeGap
+│   │   │   │   ├── WarningType
+│   │   │   │   └── DegradationStatus
+│   │   │   ├── Center
+│   │   │   │   ├── IsEnabled
+│   │   │   │   ├── IsWarning
+│   │   │   │   ├── Distance
+│   │   │   │   ├── TimeGap
+│   │   │   │   ├── WarningType
+│   │   │   │   └── DegradationStatus
+│   │   │   └── Right
+│   │   │       ├── IsEnabled
+│   │   │       ├── IsWarning
+│   │   │       ├── Distance
+│   │   │       ├── TimeGap
+│   │   │       ├── WarningType
+│   │   │       └── DegradationStatus
+│   │   └── Rear
+│   │       ├── Left
+│   │       │   ├── IsEnabled
+│   │       │   ├── IsWarning
+│   │       │   ├── Distance
+│   │       │   ├── TimeGap
+│   │       │   ├── WarningType
+│   │       │   └── DegradationStatus
+│   │       ├── Center
+│   │       │   ├── IsEnabled
+│   │       │   ├── IsWarning
+│   │       │   ├── Distance
+│   │       │   ├── TimeGap
+│   │       │   ├── WarningType
+│   │       │   └── DegradationStatus
+│   │       └── Right
+│   │           ├── IsEnabled
+│   │           ├── IsWarning
+│   │           ├── Distance
+│   │           ├── TimeGap
+│   │           ├── WarningType
+│   │           └── DegradationStatus
+│   ├── ABS
+│   │   ├── IsEnabled
+│   │   └── IsEngaged
+│   ├── TCS
+│   │   ├── IsEnabled
+│   │   └── IsEngaged
+│   ├── ESC
+│   │   ├── IsEnabled
+│   │   ├── IsEngaged
+│   │   ├── IsStrongCrossWindDetected
+│   │   └── RoadFriction
+│   ├── EBD
+│   │   ├── IsEnabled
+│   │   └── IsEngaged
+│   ├── EBA
+│   │   ├── IsEnabled
+│   │   └── IsEngaged
+│   ├── DMS
+│   │   ├── IsEnabled
+│   │   ├── IsWarning
+│   │   └── DegradationStatus
+│   ├── PowerOptimizeLevel
+│   └── IsAutoPowerOptimize
+├── Chassis
+│   ├── Wheelbase
+│   ├── Axle
+│   │   ├── Row1
+│   │   │   ├── TreadWidth
+│   │   │   ├── TrackWidth
+│   │   │   ├── AxleWidth
+│   │   │   ├── WheelCount
+│   │   │   ├── WheelDiameter
+│   │   │   ├── WheelWidth
+│   │   │   ├── SteeringAngle
+│   │   │   ├── TireWidth
+│   │   │   ├── TireAspectRatio
+│   │   │   └── Wheel
+│   │   │       ├── Left
+│   │   │       │   ├── Brake
+│   │   │       │   │   ├── FluidLevel
+│   │   │       │   │   ├── IsFluidLevelLow
+│   │   │       │   │   ├── PadWear
+│   │   │       │   │   └── IsBrakesWorn
+│   │   │       │   ├── Tire
+│   │   │       │   │   ├── Pressure
+│   │   │       │   │   ├── IsPressureLow
+│   │   │       │   │   ├── RubberTemperature
+│   │   │       │   │   └── AirTemperature
+│   │   │       │   ├── Speed
+│   │   │       │   └── AngularSpeed
+│   │   │       └── Right
+│   │   │           ├── Brake
+│   │   │           │   ├── FluidLevel
+│   │   │           │   ├── IsFluidLevelLow
+│   │   │           │   ├── PadWear
+│   │   │           │   └── IsBrakesWorn
+│   │   │           ├── Tire
+│   │   │           │   ├── Pressure
+│   │   │           │   ├── IsPressureLow
+│   │   │           │   ├── RubberTemperature
+│   │   │           │   └── AirTemperature
+│   │   │           ├── Speed
+│   │   │           └── AngularSpeed
+│   │   └── Row2
+│   │       ├── TreadWidth
+│   │       ├── TrackWidth
+│   │       ├── AxleWidth
+│   │       ├── WheelCount
+│   │       ├── WheelDiameter
+│   │       ├── WheelWidth
+│   │       ├── SteeringAngle
+│   │       ├── TireWidth
+│   │       ├── TireAspectRatio
+│   │       └── Wheel
+│   │           ├── Left
+│   │           │   ├── Brake
+│   │           │   │   ├── FluidLevel
+│   │           │   │   ├── IsFluidLevelLow
+│   │           │   │   ├── PadWear
+│   │           │   │   └── IsBrakesWorn
+│   │           │   ├── Tire
+│   │           │   │   ├── Pressure
+│   │           │   │   ├── IsPressureLow
+│   │           │   │   ├── RubberTemperature
+│   │           │   │   └── AirTemperature
+│   │           │   ├── Speed
+│   │           │   └── AngularSpeed
+│   │           └── Right
+│   │               ├── Brake
+│   │               │   ├── FluidLevel
+│   │               │   ├── IsFluidLevelLow
+│   │               │   ├── PadWear
+│   │               │   └── IsBrakesWorn
+│   │               ├── Tire
+│   │               │   ├── Pressure
+│   │               │   ├── IsPressureLow
+│   │               │   ├── RubberTemperature
+│   │               │   └── AirTemperature
+│   │               ├── Speed
+│   │               └── AngularSpeed
+│   ├── AxleCount
+│   ├── ParkingBrake
+│   │   ├── IsEngaged
+│   │   └── IsAutoApplyEnabled
+│   ├── SteeringWheel
+│   │   ├── Angle
+│   │   ├── Tilt
+│   │   ├── Extension
+│   │   └── Heating
+│   ├── Accelerator
+│   │   └── PedalPosition
+│   └── Brake
+│       ├── PedalPosition
+│       └── IsDriverEmergencyBrakingDetected
+├── Driver
+│   ├── DistractionLevel
+│   ├── IsEyesOnRoad
+│   ├── IsHandsOnWheel
+│   ├── FatigueLevel
+│   └── HeartRate
+├── Occupant
+│   ├── Row1
+│   │   ├── DriverSide
+│   │   │   ├── Identifier
+│   │   │   │   ├── Subject
+│   │   │   │   └── Issuer
+│   │   │   ├── HeadPosition
+│   │   │   └── MidEyeGaze
+│   │   ├── Middle
+│   │   │   ├── Identifier
+│   │   │   │   ├── Subject
+│   │   │   │   └── Issuer
+│   │   │   ├── HeadPosition
+│   │   │   └── MidEyeGaze
+│   │   └── PassengerSide
+│   │       ├── Identifier
+│   │       │   ├── Subject
+│   │       │   └── Issuer
+│   │       ├── HeadPosition
+│   │       └── MidEyeGaze
+│   └── Row2
+│       ├── DriverSide
+│       │   ├── Identifier
+│       │   │   ├── Subject
+│       │   │   └── Issuer
+│       │   ├── HeadPosition
+│       │   └── MidEyeGaze
+│       ├── Middle
+│       │   ├── Identifier
+│       │   │   ├── Subject
+│       │   │   └── Issuer
+│       │   ├── HeadPosition
+│       │   └── MidEyeGaze
+│       └── PassengerSide
+│           ├── Identifier
+│           │   ├── Subject
+│           │   └── Issuer
+│           ├── HeadPosition
+│           └── MidEyeGaze
+├── Exterior
+│   ├── AirTemperature
+│   ├── Humidity
+│   └── LightIntensity
+├── VersionVSS
+│   ├── Major
+│   ├── Minor
+│   ├── Patch
+│   └── Label
+├── VehicleIdentification
+│   ├── VIN
+│   ├── WMI
+│   ├── Brand
+│   ├── Model
+│   ├── Year
+│   ├── AcrissCode
+│   ├── BodyType
+│   ├── DateVehicleFirstRegistered
+│   ├── LicensePlate
+│   ├── MeetsEmissionStandard
+│   ├── ProductionDate
+│   ├── PurchaseDate
+│   ├── VehicleModelDate
+│   ├── VehicleConfiguration
+│   ├── VehicleSeatingCapacity
+│   ├── VehicleSpecialUsage
+│   ├── VehicleExteriorColor
+│   ├── VehicleInteriorColor
+│   ├── VehicleInteriorType
+│   ├── KnownVehicleDamages
+│   └── OptionalExtras
+├── LowVoltageSystemState
+├── LowVoltageBattery
+│   ├── NominalVoltage
+│   ├── NominalCapacity
+│   └── CurrentElectricity
+├── Speed
+├── TraveledDistance
+├── TraveledDistanceSinceStart
+├── StartTime
+├── TripDuration
+├── IsBrokenDown
+├── IsMoving
+├── AverageSpeed
+├── Acceleration
+├── AngularVelocity
+├── RoofLoad
+├── CargoVolume
+├── EmissionsCO2
+├── CurrentOverallWeight
+├── CurbWeight
+├── GrossWeight
+├── MaxTowWeight
+├── MaxTowBallWeight
+├── Length
+├── Height
+├── WidthExcludingMirrors
+├── WidthIncludingMirrors
+├── WidthFoldedMirrors
+├── TurningDiameter
+├── Trailer
+│   └── IsConnected
+├── CurrentLocation
+│   ├── GNSSReceiver
+│   │   ├── MountingPosition
+│   │   │   ├── X
+│   │   │   ├── Y
+│   │   │   └── Z
+│   │   └── GNSSLocationType
+│   ├── VehicleLocation
+│   └── ReferencePosition
+│       ├── X
+│       ├── Y
+│       └── Z
+├── PowerOptimizeLevel
+├── IsAutoPowerOptimize
+├── MotionManagement
+│   ├── ElectricAxle
+│   │   ├── Row1
+│   │   │   ├── Torque
+│   │   │   ├── TorqueMaximum
+│   │   │   ├── TorqueMinimum
+│   │   │   ├── TorqueMaximumLimit
+│   │   │   ├── TorqueMinimumLimit
+│   │   │   ├── RotationalSpeed
+│   │   │   ├── RotationalSpeedMaximumLimit
+│   │   │   └── RotationalSpeedMinimumLimit
+│   │   └── Row2
+│   │       ├── Torque
+│   │       ├── TorqueMaximum
+│   │       ├── TorqueMinimum
+│   │       ├── TorqueMaximumLimit
+│   │       ├── TorqueMinimumLimit
+│   │       ├── RotationalSpeed
+│   │       ├── RotationalSpeedMaximumLimit
+│   │       └── RotationalSpeedMinimumLimit
+│   ├── Brake
+│   │   ├── VehicleForceMaximum
+│   │   ├── VehicleForceElectricMinimumArbitrated
+│   │   ├── VehicleForceElectric
+│   │   ├── VehicleForceDistributionFrontMaximum
+│   │   ├── VehicleForceDistributionFrontMinimum
+│   │   └── Axle
+│   │       ├── Row1
+│   │       │   ├── TorqueElectricMinimum
+│   │       │   ├── TorqueFrictionDifferenceMaximum
+│   │       │   ├── TorqueDistributionFrictionRightMaximum
+│   │       │   ├── TorqueDistributionFrictionRightMinimum
+│   │       │   └── Wheel
+│   │       │       ├── Left
+│   │       │       │   ├── Torque
+│   │       │       │   ├── TorqueArbitrated
+│   │       │       │   ├── TorqueFrictionMaximum
+│   │       │       │   ├── TorqueFrictionMinimum
+│   │       │       │   ├── OmegaUpper
+│   │       │       │   └── OmegaLower
+│   │       │       └── Right
+│   │       │           ├── Torque
+│   │       │           ├── TorqueArbitrated
+│   │       │           ├── TorqueFrictionMaximum
+│   │       │           ├── TorqueFrictionMinimum
+│   │       │           ├── OmegaUpper
+│   │       │           └── OmegaLower
+│   │       └── Row2
+│   │           ├── TorqueElectricMinimum
+│   │           ├── TorqueFrictionDifferenceMaximum
+│   │           ├── TorqueDistributionFrictionRightMaximum
+│   │           ├── TorqueDistributionFrictionRightMinimum
+│   │           └── Wheel
+│   │               ├── Left
+│   │               │   ├── Torque
+│   │               │   ├── TorqueArbitrated
+│   │               │   ├── TorqueFrictionMaximum
+│   │               │   ├── TorqueFrictionMinimum
+│   │               │   ├── OmegaUpper
+│   │               │   └── OmegaLower
+│   │               └── Right
+│   │                   ├── Torque
+│   │                   ├── TorqueArbitrated
+│   │                   ├── TorqueFrictionMaximum
+│   │                   ├── TorqueFrictionMinimum
+│   │                   ├── OmegaUpper
+│   │                   └── OmegaLower
+│   ├── Steering
+│   │   ├── SteeringWheel
+│   │   │   ├── Angle
+│   │   │   ├── AngleTargetMode
+│   │   │   ├── TorqueOffsetTarget
+│   │   │   ├── TorqueOffsetTargetMode
+│   │   │   ├── TorqueTargetMode
+│   │   │   └── Torque
+│   │   └── Axle
+│   │       ├── Row1
+│   │       │   ├── PositionTargetMode
+│   │       │   ├── PositionOffsetTargetMode
+│   │       │   ├── RackPosition
+│   │       │   ├── RackPositionOffsetTarget
+│   │       │   ├── SteerAngle
+│   │       │   └── SteerAngleOffsetTarget
+│   │       └── Row2
+│   │           ├── SteerAngle
+│   │           └── SteerAngleVelocityTarget
+│   └── Suspension
+│       ├── DampingPrioTarget
+│       ├── RollTorqueTarget
+│       ├── RollPrioTarget
+│       ├── RollTorqueDistributionFrontMaximum
+│       ├── RollTorqueDistributionFrontMinimum
+│       └── Axle
+│           ├── Row1
+│           │   ├── RollTorque
+│           │   └── Wheel
+│           │       ├── Left
+│           │       │   ├── DampingRateTarget
+│           │       │   ├── DampingRate
+│           │       │   ├── DampingForceTarget
+│           │       │   └── DampingForce
+│           │       └── Right
+│           │           ├── DampingRateTarget
+│           │           ├── DampingRate
+│           │           ├── DampingForceTarget
+│           │           └── DampingForce
+│           └── Row2
+│               ├── RollTorque
+│               └── Wheel
+│                   ├── Left
+│                   │   ├── DampingRateTarget
+│                   │   ├── DampingRate
+│                   │   ├── DampingForceTarget
+│                   │   └── DampingForce
+│                   └── Right
+│                       ├── DampingRateTarget
+│                       ├── DampingRate
+│                       ├── DampingForceTarget
+│                       └── DampingForce
+├── TripMeter
+│   ├── Number1
+│   │   └── Distance
+│   └── Number2
+│       └── Distance
+└── VersionYoriitoVSS
+    ├── Major
+    ├── Minor
+    ├── Patch
+    └── Label
+Types
+├── Acceleration
+│   ├── Longitudinal
+│   ├── Lateral
+│   └── Vertical
+├── AngularVelocity
+│   ├── Roll
+│   ├── Pitch
+│   └── Yaw
+├── Electricity
+│   ├── Voltage
+│   └── Current
+├── GNSSLocation
+│   ├── Timestamp
+│   ├── Latitude
+│   ├── Longitude
+│   ├── HorizontalAccuracy
+│   ├── Altitude
+│   ├── VerticalAccuracy
+│   └── FixType
+├── Location
+│   ├── Latitude
+│   ├── Longitude
+│   └── Altitude
+├── PointingDirection
+│   ├── Azimuth
+│   └── Elevation
+├── Pose
+│   ├── X
+│   ├── Y
+│   ├── Z
+│   ├── Yaw
+│   ├── Pitch
+│   └── Roll
+├── RoadFrictionRange
+│   ├── MostProbable
+│   ├── LowerBound
+│   └── UpperBound
+├── ThreePhaseCurrentMeasurements
+│   ├── Phase1
+│   ├── Phase2
+│   └── Phase3
+├── ThreePhaseVoltageMeasurements
+│   ├── Phase1
+│   ├── Phase2
+│   └── Phase3
+└── VehicleLocation
+    ├── Timestamp
+    ├── Latitude
+    ├── Longitude
+    ├── HorizontalAccuracy
+    ├── Altitude
+    ├── VerticalAccuracy
+    └── Heading

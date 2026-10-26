@@ -18,4 +18,4 @@ Please see [Yoriito VSS Development Guide](docs/devguide.md).
 
 - [COVESA Vehicle Signal Specification (VSS)](https://covesa.github.io/vehicle_signal_specification/)
 - [COVESA Vehicle Information Service Specification (VISS)](https://github.com/COVESA/vehicle-information-service-specification)
-- [VSS-tools (vspec processing tools)](https://github.com/COVESA/vss-tools)
+- [VSS-tools (vspec processing tools)](https://github.com/COVESA/vss-tools/tree/release/6.0)

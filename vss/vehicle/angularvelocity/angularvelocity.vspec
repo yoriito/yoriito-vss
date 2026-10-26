@@ -14,15 +14,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.AngularVelocity.Roll_Availability_Sensor:
-  datatype: boolean
+Vehicle.AngularVelocity:
+  datatype: Types.AngularVelocity
   type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.AngularVelocity.Pitch_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.AngularVelocity.Yaw_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
+  description: Spatial rotation. Axis definitions according to ISO 8855.
+Vehicle.AngularVelocity.Roll:
+  delete: true
+Vehicle.AngularVelocity.Pitch:
+  delete: true
+Vehicle.AngularVelocity.Yaw:
+  delete: true

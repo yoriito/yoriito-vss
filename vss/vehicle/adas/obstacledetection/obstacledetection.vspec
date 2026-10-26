@@ -14,28 +14,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.ADAS.ObstacleDetection.IsEnabled_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available False = Unavailable.
-Vehicle.ADAS.ObstacleDetection.IsEnabled_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.ADAS.ObstacleDetection.IsWarning_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
 Vehicle.ADAS.ObstacleDetection.DegradationStatus:
   datatype: string
   type: sensor
-  allowed: ["NO_DEGRADATION", "CAMERA_OBSTRUCTION_DETECTED", "ENV_CONDITION_BAD", "OTHER"]
+  allowed: ["NO_DEGRADATION", "SENSOR_BLOCKED", "CALIBRATION_ERROR", "SENSOR_MOUNTING_ERROR", "SENSOR_SIGNAL_CONFLICT", "ENV_CONDITION_BAD", "TEMP_ABNORMAL"]
   description:
     Indicates the current functional limitation or performance degradation status of ObstacleDetection.
     This status may include non-fault conditions such as temporary limitations, reduced performance, or fallback modes.
-Vehicle.ADAS.ObstacleDetection.DegradationStatus_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
 Vehicle.ADAS.ObstacleDetection.IsError:
   delete: true
+Vehicle.ADAS.ObstacleDetection.Distance:
+  datatype: float
+  type: sensor
+  unit: m
+  min: -1.0
+  description: Distance in meters to detected object. If no object were detected, returns -1.
+Vehicle.ADAS.ObstacleDetection.TimeGap:
+  datatype: int32
+  type: sensor
+  unit: ms
+  description: Time in milliseconds before potential impact object. If no object were detected, returns -1.

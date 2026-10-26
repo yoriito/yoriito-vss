@@ -16,15 +16,3 @@
 
 Vehicle.Powertrain.CombustionEngine.EngineOil.Capacity:
  description: Recommended capacity for the engine oil in liters, not the maximum capacity.
-Vehicle.Powertrain.CombustionEngine.EngineOil.Temperature_Availability_Sensor:
- datatype: boolean
- type: sensor
- description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.CombustionEngine.EngineOil.Level_Availability_Sensor:
- datatype: boolean
- type: sensor
- description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Powertrain.CombustionEngine.EngineOil.LifeRemaining_Availability_Sensor:
- datatype: boolean
- type: sensor
- description: Availability of sensing the signal. True = Available. False = Unavailable.

@@ -25,7 +25,7 @@ Vehicle.VersionYoriitoVSS.Major:
 Vehicle.VersionYoriitoVSS.Minor:
   datatype: uint32
   type: attribute
-  default: 1
+  default: 2
   description: Supported Version of YoriitoVSS - Minor version.
 Vehicle.VersionYoriitoVSS.Patch:
   datatype: uint32

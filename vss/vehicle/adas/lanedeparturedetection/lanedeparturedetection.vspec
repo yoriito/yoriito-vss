@@ -14,18 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.ADAS.LaneDepartureDetection.IsEnabled_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available False = Unavailable.
-Vehicle.ADAS.LaneDepartureDetection.IsEnabled_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
-Vehicle.ADAS.LaneDepartureDetection.IsWarning_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available False = Unavailable.
 Vehicle.ADAS.LaneDepartureDetection.DegradationStatus:
   datatype: string
   type: sensor
@@ -33,9 +21,5 @@ Vehicle.ADAS.LaneDepartureDetection.DegradationStatus:
   description:
     Indicates the current functional limitation or performance degradation status of LaneDepartureDetection.
     This status may include non-fault conditions such as temporary limitations, reduced performance, or fallback modes.
-Vehicle.ADAS.LaneDepartureDetection.DegradationStatus_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
 Vehicle.ADAS.LaneDepartureDetection.IsError:
   delete: true

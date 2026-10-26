@@ -23,66 +23,18 @@ Vehicle.LowVoltageSystemState:
     'ON',        # Engine start enabled (e.g. ignition on, diesel pre-heating, electrical drive released)
     'START'      # Engine starter relay closed (not applicable for electrical vehicles)
     ]
-Vehicle.LowVoltageSystemState_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.Speed_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.TraveledDistance_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.TraveledDistanceSinceStart_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.TripDuration_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.TripMeterReading_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.TripMeterReading_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.IsBrokenDown_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.IsMoving_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.AverageSpeed_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.CurrentOverallWeight_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.PowerOptimizeLevel_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.PowerOptimizeLevel_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
-Vehicle.IsAutoPowerOptimize_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.IsAutoPowerOptimize_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
+Vehicle.TripMeterReading:
+  delete: true
+Vehicle.TripMeter:
+  type: branch
+  instances: Number[1,2]
+  description: The trip meter is an odometer that can be manually reset by the driver.
+  comment: Number1 corresponds to Trip A, Number2 corresponds to Trip B.
+Vehicle.TripMeter.Distance:
+  datatype: uint32
+  type: actuator
+  unit: m
+  description: Trip meter distance.
 Vehicle.CurbWeight:
   default: null
 Vehicle.GrossWeight:
@@ -96,4 +48,4 @@ Vehicle.Length:
 Vehicle.Height:
   default: null 
 Vehicle.WidthExcludingMirrors:
-  default: null 
+  default: null

@@ -14,11 +14,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Vehicle.Cabin.Seat.Seating.Length_Availability_Actuator:
-  datatype: boolean
-  type: sensor
-  description: Availability of actuating the signal. True = Available. False = Unavailable.
-Vehicle.Cabin.Seat.Seating.Length_Availability_Sensor:
-  datatype: boolean
-  type: sensor
-  description: Availability of sensing the signal. True = Available. False = Unavailable.
+Vehicle.Cabin.Seat.Seating.Ventilator:
+  datatype: uint8
+  type: actuator
+  min: 0
+  max: 100
+  unit: percent
+  description: Seat bottom ventilation level. 0 = Ventilation deactivated, 100 = Maximum ventilation.
+Vehicle.Cabin.Seat.Seating.IsForwardSwitchEngaged:
+  delete: true
+Vehicle.Cabin.Seat.Seating.IsBackwardSwitchEngaged:
+  delete: true
